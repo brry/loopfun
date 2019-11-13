@@ -1,0 +1,474 @@
+Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-14 00:35:12
+
+
+processing file: LoopFun.Rnw
+  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   1%
+  ordinary text without R code
+
+  |                                                                         |.                                                                |   2%
+label: setup (with options) 
+List of 1
+ $ include: logi FALSE
+
+  |                                                                         |..                                                               |   3%
+  ordinary text without R code
+
+  |                                                                         |..                                                               |   4%
+label: slidebg (with options) 
+List of 3
+ $ echo      : symbol F
+ $ fig.show  : chr "hide"
+ $ fig.height: num 4.5
+
+  |                                                                         |...                                                              |   5%
+  ordinary text without R code
+
+  |                                                                         |....                                                             |   5%
+label: cond2 (with options) 
+List of 3
+ $ echo: logi TRUE
+ $ eval: logi FALSE
+ $ tidy: logi FALSE
+
+  |                                                                         |....                                                             |   6%
+  ordinary text without R code
+
+  |                                                                         |.....                                                            |   7%
+label: cond3 (with options) 
+List of 3
+ $ echo: logi FALSE
+ $ eval: logi TRUE
+ $ tidy: logi FALSE
+
+  |                                                                         |.....                                                            |   8%
+  ordinary text without R code
+
+  |                                                                         |......                                                           |   9%
+label: ifelse_vectorized1
+  |                                                                         |......                                                           |  10%
+  ordinary text without R code
+
+  |                                                                         |.......                                                          |  11%
+label: ifelse_vectorized2
+  |                                                                         |........                                                         |  12%
+  ordinary text without R code
+
+  |                                                                         |........                                                         |  13%
+label: ifelse_vectorized3
+  |                                                                         |.........                                                        |  14%
+  ordinary text without R code
+
+  |                                                                         |.........                                                        |  15%
+label: excondsol1a (with options) 
+List of 3
+ $ eval: logi TRUE
+ $ size: chr "footnotesize"
+ $ echo: language -1
+
+  |                                                                         |..........                                                       |  15%
+label: excondsol1b (with options) 
+List of 3
+ $ eval: logi TRUE
+ $ size: chr "footnotesize"
+ $ echo: language -1
+
+  |                                                                         |...........                                                      |  16%
+label: excondsol1c (with options) 
+List of 3
+ $ eval: logi TRUE
+ $ size: chr "footnotesize"
+ $ echo: language -1
+
+  |                                                                         |...........                                                      |  17%
+  ordinary text without R code
+
+  |                                                                         |............                                                     |  18%
+label: excondsol2 (with options) 
+List of 2
+ $ eval: logi TRUE
+ $ echo: language -1
+
+  |                                                                         |............                                                     |  19%
+label: resetopts2 (with options) 
+List of 1
+ $ echo: symbol F
+
+  |                                                                         |.............                                                    |  20%
+  ordinary text without R code
+
+  |                                                                         |..............                                                   |  21%
+label: excondsol3 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |..............                                                   |  22%
+  ordinary text without R code
+
+  |                                                                         |...............                                                  |  23%
+label: ifelseexbonus (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |...............                                                  |  24%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: mad (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |.................                                                |  25%
+  ordinary text without R code
+
+  |                                                                         |.................                                                |  26%
+label: for1 (with options) 
+List of 2
+ $ echo: symbol T
+ $ eval: symbol F
+
+  |                                                                         |..................                                               |  27%
+  ordinary text without R code
+
+  |                                                                         |..................                                               |  28%
+label: for_print (with options) 
+List of 1
+ $ eval: symbol F
+
+  |                                                                         |...................                                              |  29%
+  ordinary text without R code
+
+  |                                                                         |....................                                             |  30%
+label: for2 (with options) 
+List of 3
+ $ echo: symbol T
+ $ eval: logi TRUE
+ $ tidy: logi FALSE
+
+  |                                                                         |....................                                             |  31%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  32%
+label: for6
+  |                                                                         |.....................                                            |  33%
+  ordinary text without R code
+
+  |                                                                         |......................                                           |  34%
+label: for6b
+  |                                                                         |......................                                           |  35%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  35%
+label: for6b2 (with options) 
+List of 1
+ $ echo: num 2
+
+  |                                                                         |........................                                         |  36%
+  ordinary text without R code
+
+  |                                                                         |........................                                         |  37%
+label: for3a (with options) 
+List of 2
+ $ echo: symbol F
+ $ size: chr "footnotesize"
+
+  |                                                                         |.........................                                        |  38%
+  ordinary text without R code
+
+  |                                                                         |.........................                                        |  39%
+label: for3 (with options) 
+List of 2
+ $ echo: language -1
+ $ size: chr "footnotesize"
+
+  |                                                                         |..........................                                       |  40%
+  ordinary text without R code
+
+  |                                                                         |...........................                                      |  41%
+label: for5 (with options) 
+List of 2
+ $ echo: language -1
+ $ size: chr "footnotesize"
+
+  |                                                                         |...........................                                      |  42%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  43%
+label: for_loop_init1 (with options) 
+List of 2
+ $ eval: logi FALSE
+ $ size: chr "small"
+
+  |                                                                         |............................                                     |  44%
+  ordinary text without R code
+
+  |                                                                         |.............................                                    |  45%
+label: for_loop_init2 (with options) 
+List of 2
+ $ eval: logi FALSE
+ $ size: chr "small"
+
+  |                                                                         |..............................                                   |  45%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  46%
+label: for_loop_init3 (with options) 
+List of 2
+ $ eval: logi FALSE
+ $ size: chr "small"
+
+  |                                                                         |...............................                                  |  47%
+  ordinary text without R code
+
+  |                                                                         |...............................                                  |  48%
+label: forloops_file_writing (with options) 
+List of 2
+ $ eval: logi FALSE
+ $ size: chr "footnotesize"
+
+  |                                                                         |................................                                 |  49%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: seq_along0 (with options) 
+List of 1
+ $ size: chr "scriptsize"
+
+  |                                                                         |.................................                                |  51%
+  ordinary text without R code
+
+  |                                                                         |..................................                               |  52%
+label: seq_along1 (with options) 
+List of 1
+ $ size: chr "footnotesize"
+
+  |                                                                         |..................................                               |  53%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  54%
+label: seq_along2 (with options) 
+List of 1
+ $ size: chr "footnotesize"
+
+  |                                                                         |...................................                              |  55%
+  ordinary text without R code
+
+  |                                                                         |....................................                             |  55%
+label: seq_along3
+  |                                                                         |.....................................                            |  56%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: seq_along4 (with options) 
+List of 1
+ $ size: chr "scriptsize"
+
+  |                                                                         |......................................                           |  58%
+  ordinary text without R code
+
+  |                                                                         |......................................                           |  59%
+label: stocks_datapreparation (with options) 
+List of 2
+ $ size: chr "scriptsize"
+ $ eval: symbol F
+
+  |                                                                         |.......................................                          |  60%
+  ordinary text without R code
+
+  |                                                                         |........................................                         |  61%
+label: forpanel (with options) 
+List of 2
+ $ size      : chr "footnotesize"
+ $ fig.height: num 2.8
+
+  |                                                                         |........................................                         |  62%
+  ordinary text without R code
+
+  |                                                                         |.........................................                        |  63%
+label: forpanel2 (with options) 
+List of 2
+ $ size      : chr "scriptsize"
+ $ fig.height: num 2.5
+
+  |                                                                         |.........................................                        |  64%
+  ordinary text without R code
+
+  |                                                                         |..........................................                       |  65%
+label: for_lapply1 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |...........................................                      |  65%
+  ordinary text without R code
+
+  |                                                                         |...........................................                      |  66%
+label: for_lapply2 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |............................................                     |  67%
+  ordinary text without R code
+
+  |                                                                         |............................................                     |  68%
+label: for_lapply3 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |.............................................                    |  69%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  70%
+label: for_lapply4 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |..............................................                   |  71%
+  ordinary text without R code
+
+  |                                                                         |...............................................                  |  72%
+label: for_lapply5 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |...............................................                  |  73%
+  ordinary text without R code
+
+  |                                                                         |................................................                 |  74%
+label: for_lapply6 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |................................................                 |  75%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: for_lapply7 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |..................................................               |  76%
+  ordinary text without R code
+
+  |                                                                         |..................................................               |  77%
+label: for_lapply8 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |...................................................              |  78%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: for_lapply9 (with options) 
+List of 1
+ $ eval: logi FALSE
+
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  81%
+label: funct2 (with options) 
+List of 3
+ $ echo: symbol T
+ $ eval: symbol T
+ $ tidy: logi FALSE
+
+  |                                                                         |.....................................................            |  82%
+  ordinary text without R code
+
+  |                                                                         |......................................................           |  83%
+label: funct3
+  |                                                                         |......................................................           |  84%
+  ordinary text without R code
+
+  |                                                                         |.......................................................          |  85%
+label: funct4 (with options) 
+List of 2
+ $ size: chr "small"
+ $ echo: language -1
+
+  |                                                                         |........................................................         |  85%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: funct5 (with options) 
+List of 3
+ $ echo: symbol T
+ $ eval: symbol T
+ $ tidy: logi FALSE
+
+  |                                                                         |.........................................................        |  87%
+  ordinary text without R code
+
+  |                                                                         |.........................................................        |  88%
+label: pqfunplot
+  |                                                                         |..........................................................       |  89%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  90%
+label: circlebasics (with options) 
+List of 4
+ $ echo      : language -1
+ $ fig.height: num 2.1
+ $ fig.width : num 2.5
+ $ out.width : chr "0.4\\textwidth"
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  92%
+label: exfunsola (with options) 
+List of 1
+ $ size: chr "scriptsize"
+
+  |                                                                         |............................................................     |  93%
+  ordinary text without R code
+
+  |                                                                         |.............................................................    |  94%
+label: exfunsolb (with options) 
+List of 1
+ $ echo: language -1
+
+  |                                                                         |.............................................................    |  95%
+  ordinary text without R code
+
+  |                                                                         |..............................................................   |  95%
+label: exfunsolc (with options) 
+List of 3
+ $ echo     : language -1
+ $ size     : chr "scriptsize"
+ $ out.width: chr "0.65\\textwidth"
+
+  |                                                                         |...............................................................  |  96%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  97%
+label: stopfun (with options) 
+List of 2
+ $ eval: symbol F
+ $ size: chr "footnotesize"
+
+  |                                                                         |................................................................ |  98%
+  ordinary text without R code
+
+  |                                                                         |................................................................ |  99%
+label: PQ_lsc (with options) 
+List of 3
+ $ echo      : symbol F
+ $ warning   : symbol F
+ $ fig.height: num 2.8
+
+  |                                                                         |.................................................................| 100%
+  ordinary text without R code
+
+
+output file: LoopFun.tex
+
+-------
+Finished knitr::knit 2019-11-14 00:35:18, after 5.6 secs
+Finished tools::texi2pdf 2019-11-14 00:35:46, after 29 secs 
+-------
+Messages in 'LoopFun.log' at 'C:/Dropbox/R/loopfun':
+---
+No errors found in 'LoopFun.log', but to be sure,
+open the corresponding tex file in TexMaker and click on 'View log'.
+---
+Total time  34 secs
