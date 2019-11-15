@@ -191,7 +191,7 @@ PDF created on \the\year-\leadingzero{\month}-\leadingzero{\day}, \currenttime\ 
 \end{itemize}
 \end{frame}
 
-
+\iffalse % commenting out Conditions section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{Conditions}
@@ -432,6 +432,7 @@ Multiple nested conditionals\\
 can be avoided with \rcode{switch}.
 \end{frame}
 
+\fi % commenting out Conditions section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{For loops}
@@ -756,6 +757,7 @@ for(i in 2:3)
 @
 \end{frame}
 
+\iffalse % commenting out lapply section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{lapply}
@@ -835,6 +837,7 @@ sapply(ldfs, "[", 5,    )
 @
 \end{frame}
 
+\fi % commenting out lapply section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{Functions}
@@ -990,6 +993,7 @@ for(i in 1:15) circle(x[i],y[i],r[i], col=rgb(1,0.5,0,alpha=0.4), border=NA)
 @
 \end{frame}
 
+\iffalse % commenting out R packages section
 %------------------------------------------------------------%
 
 \section{Writing R packages}
@@ -1009,6 +1013,7 @@ for(i in 1:15) circle(x[i],y[i],r[i], col=rgb(1,0.5,0,alpha=0.4), border=NA)
 Good introduction at \datalinkText{packdev.R}
 \end{frame}
 
+\fi % commenting out R packages section
 %------------------------------------------------------------%
 
 

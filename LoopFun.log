@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.14)  14 NOV 2019 17:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.14)  15 NOV 2019 10:06
 entering extended mode
 **F:/jbreier/Projects/loopfun/LoopFun.tex
 (F:/jbreier/Projects/loopfun/LoopFun.tex
@@ -1596,7 +1596,7 @@ LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
-<externalfig/Rlogo.png, id=48, 803.0pt x 702.625pt>
+<externalfig/Rlogo.png, id=36, 803.0pt x 702.625pt>
 File: externalfig/Rlogo.png Graphic file (type png)
 <use externalfig/Rlogo.png>
 Package pdftex.def Info: externalfig/Rlogo.png  used on input line 173.
@@ -1614,12 +1614,12 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<externalfig/ccby.png, id=52, 97.0827pt x 33.9669pt>
+<externalfig/ccby.png, id=40, 97.0827pt x 33.9669pt>
 File: externalfig/ccby.png Graphic file (type png)
 <use externalfig/ccby.png>
 Package pdftex.def Info: externalfig/ccby.png  used on input line 173.
 (pdftex.def)             Requested size: 32.84999pt x 11.49313pt.
-<fig/slidebg-1.pdf, id=54, 433.62pt x 325.215pt>
+<fig/slidebg-1.pdf, id=42, 433.62pt x 325.215pt>
 File: fig/slidebg-1.pdf Graphic file (type pdf)
 <use fig/slidebg-1.pdf>
 Package pdftex.def Info: fig/slidebg-1.pdf  used on input line 173.
@@ -1631,7 +1631,7 @@ debg-1.pdf> <./externalfig/Rlogo.png> <./externalfig/ccby.png>] (LoopFun.toc) [
 2
 
 ]
-<externalfig/Blogo.png, id=107, 545.03625pt x 422.32782pt>
+<externalfig/Blogo.png, id=89, 545.03625pt x 422.32782pt>
 File: externalfig/Blogo.png Graphic file (type png)
 <use externalfig/Blogo.png>
 Package pdftex.def Info: externalfig/Blogo.png  used on input line 197.
@@ -1643,7 +1643,7 @@ ut line 197.
 tawesometwo.fd"
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
-<externalfig/GFZ.png, id=110, 256.0767pt x 199.2243pt>
+<externalfig/GFZ.png, id=92, 256.0767pt x 199.2243pt>
 File: externalfig/GFZ.png Graphic file (type png)
 <use externalfig/GFZ.png>
 Package pdftex.def Info: externalfig/GFZ.png  used on input line 197.
@@ -1655,41 +1655,58 @@ Package pdftex.def Info: externalfig/GFZ.png  used on input line 197.
 ]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [5
-
-]
-\openout4 = `LoopFun.vrb'.
-
 (LoopFun.vrb
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
-) [6
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 30.
+) [5
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [6
 
 ]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/cond3-1.pdf, id=168, 433.62pt x 216.81pt>
-File: ./fig/cond3-1.pdf Graphic file (type pdf)
-<use ./fig/cond3-1.pdf>
-Package pdftex.def Info: ./fig/cond3-1.pdf  used on input line 5.
+<./fig/for3a-1.pdf, id=147, 433.62pt x 216.81pt>
+File: ./fig/for3a-1.pdf Graphic file (type pdf)
+<use ./fig/for3a-1.pdf>
+Package pdftex.def Info: ./fig/for3a-1.pdf  used on input line 6.
 (pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
 ) [7
 
- <./fig/cond3-1.pdf>]
+ <./fig/for3a-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [8
+(LoopFun.vrb
+<./fig/for3-1.pdf, id=172, 433.62pt x 216.81pt>
+File: ./fig/for3-1.pdf Graphic file (type pdf)
+<use ./fig/for3-1.pdf>
+Package pdftex.def Info: ./fig/for3-1.pdf  used on input line 13.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [8
 
-]
+ <./fig/for3-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [9
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+<./fig/for5-1.pdf, id=190, 433.62pt x 216.81pt>
+File: ./fig/for5-1.pdf Graphic file (type pdf)
+<use ./fig/for5-1.pdf>
+Package pdftex.def Info: ./fig/for5-1.pdf  used on input line 12.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [9
 
-]
+ <./fig/for5-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [10
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+) [10
 
 ]
 \openout4 = `LoopFun.vrb'.
@@ -1704,7 +1721,10 @@ Package pdftex.def Info: ./fig/cond3-1.pdf  used on input line 5.
 ]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [13
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+) [13
 
 ]
 \openout4 = `LoopFun.vrb'.
@@ -1714,16 +1734,36 @@ Package pdftex.def Info: ./fig/cond3-1.pdf  used on input line 5.
 ]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [15
-
-] [16
-
-] (LoopFun.toc) [17
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 4.
+) [15
 
 ]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [18
+(LoopFun.vrb
+<./fig/forpanel-1.pdf, id=283, 433.62pt x 201.75375pt>
+File: ./fig/forpanel-1.pdf Graphic file (type pdf)
+<use ./fig/forpanel-1.pdf>
+Package pdftex.def Info: ./fig/forpanel-1.pdf  used on input line 14.
+(pdftex.def)             Requested size: 347.12355pt x 161.51712pt.
+) [16
+
+ <./fig/forpanel-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/forpanel2-1.pdf, id=300, 433.62pt x 180.675pt>
+File: ./fig/forpanel2-1.pdf Graphic file (type pdf)
+<use ./fig/forpanel2-1.pdf>
+Package pdftex.def Info: ./fig/forpanel2-1.pdf  used on input line 17.
+(pdftex.def)             Requested size: 347.12355pt x 144.64218pt.
+) [17
+
+ <./fig/forpanel2-1.pdf>] (LoopFun.toc) [18
 
 ]
 \openout4 = `LoopFun.vrb'.
@@ -1734,172 +1774,55 @@ Package pdftex.def Info: ./fig/cond3-1.pdf  used on input line 5.
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/for3a-1.pdf, id=336, 433.62pt x 216.81pt>
-File: ./fig/for3a-1.pdf Graphic file (type pdf)
-<use ./fig/for3a-1.pdf>
-Package pdftex.def Info: ./fig/for3a-1.pdf  used on input line 6.
-(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [20
-
- <./fig/for3a-1.pdf>]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-<./fig/for3-1.pdf, id=359, 433.62pt x 216.81pt>
-File: ./fig/for3-1.pdf Graphic file (type pdf)
-<use ./fig/for3-1.pdf>
-Package pdftex.def Info: ./fig/for3-1.pdf  used on input line 13.
-(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [21
-
- <./fig/for3-1.pdf>]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
-<./fig/for5-1.pdf, id=376, 433.62pt x 216.81pt>
-File: ./fig/for5-1.pdf Graphic file (type pdf)
-<use ./fig/for5-1.pdf>
-Package pdftex.def Info: ./fig/for5-1.pdf  used on input line 12.
-(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [22
-
- <./fig/for5-1.pdf>]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
-) [23
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb) [24
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb) [25
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
-) [26
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb) [27
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
-(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 4.
-) [28
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-<./fig/forpanel-1.pdf, id=465, 433.62pt x 201.75375pt>
-File: ./fig/forpanel-1.pdf Graphic file (type pdf)
-<use ./fig/forpanel-1.pdf>
-Package pdftex.def Info: ./fig/forpanel-1.pdf  used on input line 14.
-(pdftex.def)             Requested size: 347.12355pt x 161.51712pt.
-) [29
-
- <./fig/forpanel-1.pdf>]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-<./fig/forpanel2-1.pdf, id=482, 433.62pt x 180.675pt>
-File: ./fig/forpanel2-1.pdf Graphic file (type pdf)
-<use ./fig/forpanel2-1.pdf>
-Package pdftex.def Info: ./fig/forpanel2-1.pdf  used on input line 17.
-(pdftex.def)             Requested size: 347.12355pt x 144.64218pt.
-) [30
-
- <./fig/forpanel2-1.pdf>] (LoopFun.toc) [31
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb) [32
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb) [33
-
-] (LoopFun.toc) [34
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb) [35
-
-]
-\openout4 = `LoopFun.vrb'.
-
-(LoopFun.vrb
-<./fig/funct3-1.pdf, id=570, 433.62pt x 216.81pt>
+<./fig/funct3-1.pdf, id=346, 433.62pt x 216.81pt>
 File: ./fig/funct3-1.pdf Graphic file (type pdf)
 <use ./fig/funct3-1.pdf>
 Package pdftex.def Info: ./fig/funct3-1.pdf  used on input line 12.
 (pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [36
+) [20
 
  <./fig/funct3-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/funct4-1.pdf, id=587, 433.62pt x 216.81pt>
+<./fig/funct4-1.pdf, id=363, 433.62pt x 216.81pt>
 File: ./fig/funct4-1.pdf Graphic file (type pdf)
 <use ./fig/funct4-1.pdf>
 Package pdftex.def Info: ./fig/funct4-1.pdf  used on input line 12.
 (pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [37
+) [21
 
  <./fig/funct4-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [38
+(LoopFun.vrb) [22
 
 ]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/pqfunplot-1.pdf, id=617, 433.62pt x 216.81pt>
+<./fig/pqfunplot-1.pdf, id=392, 433.62pt x 216.81pt>
 File: ./fig/pqfunplot-1.pdf Graphic file (type pdf)
 <use ./fig/pqfunplot-1.pdf>
 Package pdftex.def Info: ./fig/pqfunplot-1.pdf  used on input line 11.
 (pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [39
+) [23
 
  <./fig/pqfunplot-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/circlebasics-1.pdf, id=634, 180.675pt x 151.56625pt>
+<./fig/circlebasics-1.pdf, id=409, 180.675pt x 151.56625pt>
 File: ./fig/circlebasics-1.pdf Graphic file (type pdf)
 <use ./fig/circlebasics-1.pdf>
 Package pdftex.def Info: ./fig/circlebasics-1.pdf  used on input line 14.
 (pdftex.def)             Requested size: 138.84729pt x 116.4774pt.
-) [40
+) [24
 
  <./fig/circlebasics-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [41
+(LoopFun.vrb) [25
 
 ]
 \openout4 = `LoopFun.vrb'.
@@ -1909,65 +1832,61 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line
 9.
 ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [42
+)) [26
 
 ]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/exfunsolb-1.pdf, id=675, 433.62pt x 216.81pt>
+<./fig/exfunsolb-1.pdf, id=451, 433.62pt x 216.81pt>
 File: ./fig/exfunsolb-1.pdf Graphic file (type pdf)
 <use ./fig/exfunsolb-1.pdf>
 Package pdftex.def Info: ./fig/exfunsolb-1.pdf  used on input line 11.
 (pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
-) [43
+) [27
 
  <./fig/exfunsolb-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/exfunsolc-1.pdf, id=693, 433.62pt x 216.81pt>
+<./fig/exfunsolc-1.pdf, id=468, 433.62pt x 216.81pt>
 File: ./fig/exfunsolc-1.pdf Graphic file (type pdf)
 <use ./fig/exfunsolc-1.pdf>
 Package pdftex.def Info: ./fig/exfunsolc-1.pdf  used on input line 16.
 (pdftex.def)             Requested size: 225.62819pt x 112.81462pt.
-) [44
+) [28
 
- <./fig/exfunsolc-1.pdf>] (LoopFun.toc) [45
-
-] [46
-
-] (LoopFun.toc) [47
+ <./fig/exfunsolc-1.pdf>] (LoopFun.toc) [29
 
 ]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [48
+(LoopFun.vrb) [30
 
 ]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [49
+(LoopFun.vrb) [31
 
 ]
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/PQ_lsc-1.pdf, id=786, 433.62pt x 201.75375pt>
+<./fig/PQ_lsc-1.pdf, id=529, 433.62pt x 201.75375pt>
 File: ./fig/PQ_lsc-1.pdf Graphic file (type pdf)
 <use ./fig/PQ_lsc-1.pdf>
 Package pdftex.def Info: ./fig/PQ_lsc-1.pdf  used on input line 13.
 (pdftex.def)             Requested size: 347.12355pt x 161.51712pt.
-) [50
+) [32
 
  <./fig/PQ_lsc-1.pdf>]
 \openout4 = `LoopFun.vrb'.
 
-(LoopFun.vrb) [51
+(LoopFun.vrb) [33
 
-] (LoopFun.toc) [52
+] (LoopFun.toc) [34
 
-] [53
+] [35
 
 ]
 \tf@nav=\write6
@@ -1979,20 +1898,20 @@ Package pdftex.def Info: ./fig/PQ_lsc-1.pdf  used on input line 13.
 \tf@snm=\write8
 \openout8 = `LoopFun.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1434.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1434.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1439.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1439.
 (LoopFun.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1434.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1434.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1439.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1439.
 
 Package rerunfilecheck Info: File `LoopFun.out' has not changed.
-(rerunfilecheck)             Checksum: FBFD07FAE74BFF205C7CD56205A28F8D;314.
+(rerunfilecheck)             Checksum: 346057EDAE0D63047D706CE5FFD64D0B;175.
  ) 
 Here is how much of TeX's memory you used:
- 25073 strings out of 492450
- 453177 string characters out of 3119070
+ 24947 strings out of 492450
+ 451424 string characters out of 3119070
  556343 words of memory out of 3000000
- 28538 multiletter control sequences out of 15000+200000
+ 28484 multiletter control sequences out of 15000+200000
  67827 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,14n,63p,1094b,1030s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2024,9 +1943,9 @@ s/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:
 /Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti10.
 pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/wasy
 /wasy10.pfb>
-Output written on LoopFun.pdf (53 pages, 914631 bytes).
+Output written on LoopFun.pdf (35 pages, 835571 bytes).
 PDF statistics:
- 942 PDF objects out of 1000 (max. 8388607)
- 116 named destinations out of 1000 (max. 500000)
- 225 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 672 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 
