@@ -1,4 +1,4 @@
-Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-14 15:10:49
+Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-14 17:25:28
 
 
 processing file: LoopFun.Rnw
@@ -463,47 +463,12 @@ List of 3
 output file: LoopFun.tex
 
 -------
-Finished knitr::knit 2019-11-14 15:10:49, after 0.27 secs
-
----------------
-2019-11-14 15:10:51
-
-warning: in system(paste(shQuote(texi2dvi), if (quiet) "--quiet" else "", : running command '"C:\Users\jbreier\AppData\Local\Programs\MIKTEX~1.9\miktex\bin\x64\texify.exe" --quiet --pdf "LoopFun.tex" --max-iterations=20 -I "e:/Program Files/R/R-3.6.1/share/texmf/tex/latex" -I "e:/Program Files/R/R-3.6.1/share/texmf/bibtex/bst"' had status 1
--- tryStack sys.calls: parallel:::.slaveRSOCK -> slaveLoop -> do.call - msg$data$fun ->  -> FUN -> berryFunctions::tryStack -> tools::texi2pdf -> texi2dvi -> system -> system(paste(shQuote(texi2dvi), if (quiet) "--quiet" else "", 
-
----------------
-2019-11-14 15:10:51
-
-warning: in system(paste(shQuote(texi2dvi), if (quiet) "--quiet" else "", : running command '"C:\Users\jbreier\AppData\Local\Programs\MIKTEX~1.9\miktex\bin\x64\texify.exe" --quiet --pdf "LoopFun_pres.tex" --max-iterations=20 -I "e:/Program Files/R/R-3.6.1/share/texmf/tex/latex" -I "e:/Program Files/R/R-3.6.1/share/texmf/bibtex/bst"' had status 1
--- tryStack sys.calls: parallel:::.slaveRSOCK -> slaveLoop -> do.call - msg$data$fun ->  -> FUN -> berryFunctions::tryStack -> tools::texi2pdf -> texi2dvi -> system -> system(paste(shQuote(texi2dvi), if (quiet) "--quiet" else "", 
-
----------------
-2019-11-14 15:10:51
-
-error: in NULL: running 'texi2dvi' on 'LoopFun_pres.tex' failed
-
-LaTeX errors:
-themedefault.sty:16:  ==> Fatal error occurred, no output PDF file produced!
--- tryStack sys.calls: parallel:::.slaveRSOCK -> slaveLoop -> do.call - msg$data$fun ->  -> FUN -> berryFunctions::tryStack -> tools::texi2pdf -> texi2dvi -> stop -> NULL
-
----------------
-2019-11-14 15:10:51
-
-error: in NULL: running 'texi2dvi' on 'LoopFun.tex' failed
-
-LaTeX errors:
-themedefault.sty:16:  ==> Fatal error occurred, no output PDF file produced!
--- tryStack sys.calls: parallel:::.slaveRSOCK -> slaveLoop -> do.call - msg$data$fun ->  -> FUN -> berryFunctions::tryStack -> tools::texi2pdf -> texi2dvi -> stop -> NULL
-Finished tools::texi2pdf 2019-11-14 15:10:51, after 2.1 secs 
+Finished knitr::knit 2019-11-14 17:25:28, after 0.29 secs
+Finished tools::texi2pdf 2019-11-14 17:25:41, after 13 secs 
 -------
 Messages in 'LoopFun.log' at 'F:/jbreier/Projects/loopfun':
 ---
-themedefault.sty:16:  ==> Fatal error occurred, no output PDF file produced!
-NA
-NA
-NA
+No errors found in 'LoopFun.log', but to be sure,
+open the corresponding tex file in TexMaker and click on 'View log'.
 ---
-There may be more messages in 'LoopFun.log'.
-To check, open the corresponding tex file in TexMaker and click on 'View log'.
----
-Total time  2.4 secs
+Total time  13 secs

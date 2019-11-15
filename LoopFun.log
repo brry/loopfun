@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.14)  14 NOV 2019 15:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2019.11.14)  14 NOV 2019 17:25
 entering extended mode
 **F:/jbreier/Projects/loopfun/LoopFun.tex
 (F:/jbreier/Projects/loopfun/LoopFun.tex
@@ -796,26 +796,1237 @@ tthemedefault.sty")
 orthemedefault.sty")
 ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerinn
 erthemedefault.sty"
-C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerinner
-themedefault.sty:16: I can't write on file `LoopFun.pdf'.
-Please type another file name for output
-C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerinner
-themedefault.sty:16: Emergency stop.
-\pgfsys@defineimage ...astform }\else {\pdfximage 
-                                                  \pgf@imageheight \pgf@imag...
-l.16 ...ight=12pt]{beamericonbook}{beamericonbook}
-                                                  
-*** (job aborted, file error in nonstop mode)
+\beamer@dima=\dimen189
+\beamer@dimb=\dimen190
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerout
+erthemedefault.sty")))
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/framed\framed.st
+y"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip60
+\fb@frw=\dimen191
+\fb@frh=\dimen192
+\FrameRule=\dimen193
+\FrameSep=\dimen194
+) ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\alltt.sty
+"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerthe
+meMadrid.sty"
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamercol
+orthemewhale.sty")
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamercol
+orthemeorchid.sty")
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerinn
+erthemerounded.sty")
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerout
+erthemeinfolines.sty"))
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamercol
+orthemebeaver.sty")
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.st
+y"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks45
+\inpenc@posthook=\toks46
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\latin1.def"
+File: latin1.def 2018/08/11 v1.3c Input encoding file
+)) ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.
+sty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
+y"
+Package: babel 2019/10/15 3.35 The Babel package
 
- 
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.d
+ef"
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cf
+g"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ger
+man.ldf"
+Language: german 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
+y)
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-german\ger
+manb.ldf"
+Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograp
+hy)
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.de
+f"
+File: babel.def 2019/10/15 3.35 Babel common definitions
+\babel@savecnt=\count158
+\U@D=\dimen195
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel
+.def")
+LaTeX Info: Redefining \textlatin on input line 2185.
+\bbl@dirlevel=\count159
+)
+Package babel Info: Making " an active character on input line 135.
+))
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-english\en
+glish.ldf"
+Language: english 2017/06/06 v3.3r English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)) ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.s
+ty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count160
+\float@exts=\toks47
+\float@box=\box57
+\@float@everytoks=\toks48
+\@floatcapt=\box58
+) ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\lmodern.sty
+"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) ("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tabu\tabu.sty"
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\varwidt
+h.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box59
+\sift@deathcycles=\count161
+\@vwid@loff=\dimen196
+\@vwid@roff=\dimen197
+)
+\c@taburow=\count162
+\tabu@nbcols=\count163
+\tabu@cnt=\count164
+\tabu@Xcol=\count165
+\tabu@alloc=\count166
+\tabu@nested=\count167
+\tabu@target=\dimen198
+\tabu@spreadtarget=\dimen199
+\tabu@naturalX=\dimen256
+\tabucolX=\dimen257
+\tabu@Xsum=\dimen258
+\extrarowdepth=\dimen259
+\abovetabulinesep=\dimen260
+\belowtabulinesep=\dimen261
+\tabustrutrule=\dimen262
+\tabu@thebody=\toks49
+\tabu@footnotes=\toks50
+\tabu@box=\box60
+\tabu@arstrutbox=\box61
+\tabu@hleads=\box62
+\tabu@vleads=\box63
+\tabu@cellskip=\skip61
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multiro
+w.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count168
+\multirow@dima=\skip63
+\bigstrutjot=\dimen263
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.st
+y"
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+27E8 (decimal 10216)
+   defining Unicode char U+27E9 (decimal 10217)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listing
+s.sty"
+\lst@mode=\count169
+\lst@gtempboxa=\box64
+\lst@token=\toks51
+\lst@length=\count170
+\lst@currlwidth=\dimen264
+\lst@column=\count171
+\lst@pos=\count172
+\lst@lostspace=\dimen265
+\lst@width=\dimen266
+\lst@newlines=\count173
+\lst@lineno=\count174
+\lst@maxwidth=\dimen267
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\lstmisc
+.sty"
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count175
+\lst@skipnumbers=\count176
+\lst@framebox=\box65
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/listings\listing
+s.cfg"
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\datetim
+e.sty"
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fmtcoun
+t.sty"
+Package: fmtcount 2017/12/24 v3.05
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.
+sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyva
+l.tex"
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvuti
+ls.tex"
+\XKV@toks=\toks52
+\XKV@tempa@toks=\toks53
+)
+\XKV@depth=\count177
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fcprefi
+x.sty"
+Package: fcprefix 2012/09/28
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fcnumpa
+rser.sty"
+Package: fcnumparser 2017/06/15
+\fc@digit@counter=\count178
+))
+\c@padzeroesN=\count179
+\fc@tmpcatcode=\count180
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-engl
+ish.def"
+File: fc-english.def 2016/01/12
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-germ
+an.def"
+File: fc-german.def 2016/01/12
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fmtcount\fc-germ
+anb.def"
+File: fc-germanb.def 2013/08/17
+))
+\@DT@modctr=\count181
+\@ordinalctr=\count182
+\@orgargctr=\count183
+\@strctr=\count184
+\@tmpstrctr=\count185
+\@DT@loopN=\count186
+\@DT@X=\count187
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\datetim
+e-defaults.sty"
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count188
+\@month=\count189
+\@year=\count190
+\c@HOUR=\count191
+\c@HOURXII=\count192
+\c@MINUTE=\count193
+\c@TOHOUR=\count194
+\c@TOMINUTE=\count195
+\c@SECOND=\count196
+\currenthour=\count197
+\currentminute=\count198
+\currentsecond=\count199
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count266
+\dayofyear=\count267
+\dayofweek=\count268
+LaTeX Info: Redefining \today on input line 736.
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/datetime\dt-germ
+an.def"
+File: dt-german.def 2010/09/10
+LaTeX Info: Redefining \dategerman on input line 86.
+)
+\dt@a=\toks54
+\dt@b=\toks55
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktab
+s.sty"
+Package: booktabs 2019/10/08 v1.6180339 publication quality tables
+\heavyrulewidth=\dimen268
+\lightrulewidth=\dimen269
+\cmidrulewidth=\dimen270
+\belowrulesep=\dimen271
+\belowbottomsep=\dimen272
+\aboverulesep=\dimen273
+\abovetopsep=\dimen274
+\cmidrulesep=\dimen275
+\cmidrulekern=\dimen276
+\defaultaddspace=\dimen277
+\@cmidla=\count269
+\@cmidlb=\count270
+\@aboverulesep=\dimen278
+\@belowrulesep=\dimen279
+\@thisruleclass=\count271
+\@lastruleclass=\count272
+\@thisrulewidth=\dimen280
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\multicol.s
+ty"
+Package: multicol 2019/03/01 v1.8w multicolumn formatting (FMi)
+\c@tracingmulticols=\count273
+\mult@box=\box66
+\multicol@leftmargin=\dimen281
+\c@unbalance=\count274
+\c@collectmore=\count275
+\doublecol@number=\count276
+\multicoltolerance=\count277
+\multicolpretolerance=\count278
+\full@width=\dimen282
+\page@free=\dimen283
+\premulticols=\dimen284
+\postmulticols=\dimen285
+\multicolsep=\skip64
+\multicolbaselineskip=\skip65
+\partial@page=\box67
+\last@line=\box68
+\maxbalancingoverflow=\dimen286
+\mult@rightbox=\box69
+\mult@grightbox=\box70
+\mult@gfirstbox=\box71
+\mult@firstbox=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\c@minrows=\count279
+\c@columnbadness=\count280
+\c@finalcolumnbadness=\count281
+\last@try=\dimen287
+\multicolovershoot=\dimen288
+\multicolundershoot=\dimen289
+\mult@nat@firstbox=\box90
+\colbreak@box=\box91
+\mc@col@check@num=\count282
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/setspace\setspac
+e.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/textpos\textpos.
+sty"
+Package: textpos 2019/04/15 v1.9.1
+Package: textpos 2019/04/15 1.9.1, absolute positioning of text on the page
+\TP@textbox=\box92
+\TP@holdbox=\box93
+\TPHorizModule=\dimen290
+\TPVertModule=\dimen291
+\TP@margin=\dimen292
+\TP@absmargin=\dimen293
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+\TPboxrulesize=\dimen294
+\TP@ox=\dimen295
+\TP@oy=\dimen296
+\TP@tbargs=\toks56
+\TP@prevdepth=\dimen297
+TextBlockOrigin set to 0pt x 0pt
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\wasysym.
+sty"
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\font
+awesome.sty"
+Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\font
+awesomesymbols-generic.tex")
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\font
+awesomesymbols-pdftex.tex"))
+Package hyperref Info: Option `colorlinks' set `true' on input line 68.
+\c@exercisecount=\count283
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.
+sty"
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (LoopFun.aux)
+\openout1 = `LoopFun.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+33.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
+33.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmss.fd"
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(8.5359pt, 347.12355pt, 8.5359pt)
+* v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
+* \paperwidth=364.19536pt
+* \paperheight=273.14662pt
+* \textwidth=347.12355pt
+* \textheight=244.6939pt
+* \oddsidemargin=-63.73409pt
+* \evensidemargin=-63.73409pt
+* \topmargin=-72.26999pt
+* \headheight=14.22636pt
+* \headsep=0.0pt
+* \topskip=11.0pt
+* \footskip=14.22636pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp
+-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count284
+\scratchdimen=\dimen298
+\scratchbox=\box94
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen299
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks58
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopd
+f-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.
+sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+) ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box95
+Package hyperref Info: Link coloring ON on input line 133.
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref
+.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\refcoun
+t.sty"
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\getti
+tlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count290
+)
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
+(LoopFun.out) (LoopFun.out)
+\@outlinefile=\write5
+\openout5 = `LoopFun.out'.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 133.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 133.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 133.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 133.
+\symnumbers=\mathgroup7
+\sympureletters=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 133.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 133.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 133.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 133.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 133.
+LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 133.
+LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 133.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 133.
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\trans
+lator-basic-dictionary-English.dict"
+Dictionary: translator-basic-dictionary, Language: English 
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\trans
+lator-bibliography-dictionary-English.dict"
+Dictionary: translator-bibliography-dictionary, Language: English 
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\trans
+lator-environment-dictionary-English.dict"
+Dictionary: translator-environment-dictionary, Language: English 
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\trans
+lator-months-dictionary-English.dict"
+Dictionary: translator-months-dictionary, Language: English 
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\trans
+lator-numbers-dictionary-English.dict"
+Dictionary: translator-numbers-dictionary, Language: English 
+)
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\trans
+lator-theorem-dictionary-English.dict"
+Dictionary: translator-theorem-dictionary, Language: English 
+)
+\c@lstlisting=\count291
+(LoopFun.nav)
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
+133.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ot1lmss.fd"
+File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+33.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+133.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+133.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 133.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 133
+.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
+"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 133
+.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd
+"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 13
+3.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\uwasy.fd
+"
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 133.
+<externalfig/Rlogo.png, id=48, 803.0pt x 702.625pt>
+File: externalfig/Rlogo.png Graphic file (type png)
+<use externalfig/Rlogo.png>
+Package pdftex.def Info: externalfig/Rlogo.png  used on input line 173.
+(pdftex.def)             Requested size: 19.91684pt x 17.4219pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 173.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 173.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 173.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+73.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+<externalfig/ccby.png, id=52, 97.0827pt x 33.9669pt>
+File: externalfig/ccby.png Graphic file (type png)
+<use externalfig/ccby.png>
+Package pdftex.def Info: externalfig/ccby.png  used on input line 173.
+(pdftex.def)             Requested size: 32.84999pt x 11.49313pt.
+<fig/slidebg-1.pdf, id=54, 433.62pt x 325.215pt>
+File: fig/slidebg-1.pdf Graphic file (type pdf)
+<use fig/slidebg-1.pdf>
+Package pdftex.def Info: fig/slidebg-1.pdf  used on input line 173.
+(pdftex.def)             Requested size: 364.19536pt x 273.15889pt.
+[1
+
+{C:/Users/jbreier/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./fig/sli
+debg-1.pdf> <./externalfig/Rlogo.png> <./externalfig/ccby.png>] (LoopFun.toc) [
+2
+
+]
+<externalfig/Blogo.png, id=107, 545.03625pt x 422.32782pt>
+File: externalfig/Blogo.png Graphic file (type png)
+<use externalfig/Blogo.png>
+Package pdftex.def Info: externalfig/Blogo.png  used on input line 197.
+(pdftex.def)             Requested size: 14.22636pt x 11.01956pt.
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on inp
+ut line 197.
+
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fontawesome\ufon
+tawesometwo.fd"
+File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
+)
+<externalfig/GFZ.png, id=110, 256.0767pt x 199.2243pt>
+File: externalfig/GFZ.png Graphic file (type png)
+<use externalfig/GFZ.png>
+Package pdftex.def Info: externalfig/GFZ.png  used on input line 197.
+(pdftex.def)             Requested size: 18.49411pt x 14.38791pt.
+[3
+
+ <./externalfig/Blogo.png> <./externalfig/GFZ.png>] (LoopFun.toc) [4
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [5
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 6.
+) [6
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/cond3-1.pdf, id=168, 433.62pt x 216.81pt>
+File: ./fig/cond3-1.pdf Graphic file (type pdf)
+<use ./fig/cond3-1.pdf>
+Package pdftex.def Info: ./fig/cond3-1.pdf  used on input line 5.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [7
+
+ <./fig/cond3-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [8
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [9
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [10
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [11
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [12
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [13
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [14
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [15
+
+] [16
+
+] (LoopFun.toc) [17
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [18
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [19
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/for3a-1.pdf, id=336, 433.62pt x 216.81pt>
+File: ./fig/for3a-1.pdf Graphic file (type pdf)
+<use ./fig/for3a-1.pdf>
+Package pdftex.def Info: ./fig/for3a-1.pdf  used on input line 6.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [20
+
+ <./fig/for3a-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/for3-1.pdf, id=359, 433.62pt x 216.81pt>
+File: ./fig/for3-1.pdf Graphic file (type pdf)
+<use ./fig/for3-1.pdf>
+Package pdftex.def Info: ./fig/for3-1.pdf  used on input line 13.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [21
+
+ <./fig/for3-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+<./fig/for5-1.pdf, id=376, 433.62pt x 216.81pt>
+File: ./fig/for5-1.pdf Graphic file (type pdf)
+<use ./fig/for5-1.pdf>
+Package pdftex.def Info: ./fig/for5-1.pdf  used on input line 12.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [22
+
+ <./fig/for5-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+) [23
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [24
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [25
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 7.
+) [26
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [27
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <9> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <9> not available
+(Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 4.
+) [28
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/forpanel-1.pdf, id=465, 433.62pt x 201.75375pt>
+File: ./fig/forpanel-1.pdf Graphic file (type pdf)
+<use ./fig/forpanel-1.pdf>
+Package pdftex.def Info: ./fig/forpanel-1.pdf  used on input line 14.
+(pdftex.def)             Requested size: 347.12355pt x 161.51712pt.
+) [29
+
+ <./fig/forpanel-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/forpanel2-1.pdf, id=482, 433.62pt x 180.675pt>
+File: ./fig/forpanel2-1.pdf Graphic file (type pdf)
+<use ./fig/forpanel2-1.pdf>
+Package pdftex.def Info: ./fig/forpanel2-1.pdf  used on input line 17.
+(pdftex.def)             Requested size: 347.12355pt x 144.64218pt.
+) [30
+
+ <./fig/forpanel2-1.pdf>] (LoopFun.toc) [31
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [32
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [33
+
+] (LoopFun.toc) [34
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [35
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/funct3-1.pdf, id=570, 433.62pt x 216.81pt>
+File: ./fig/funct3-1.pdf Graphic file (type pdf)
+<use ./fig/funct3-1.pdf>
+Package pdftex.def Info: ./fig/funct3-1.pdf  used on input line 12.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [36
+
+ <./fig/funct3-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/funct4-1.pdf, id=587, 433.62pt x 216.81pt>
+File: ./fig/funct4-1.pdf Graphic file (type pdf)
+<use ./fig/funct4-1.pdf>
+Package pdftex.def Info: ./fig/funct4-1.pdf  used on input line 12.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [37
+
+ <./fig/funct4-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [38
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/pqfunplot-1.pdf, id=617, 433.62pt x 216.81pt>
+File: ./fig/pqfunplot-1.pdf Graphic file (type pdf)
+<use ./fig/pqfunplot-1.pdf>
+Package pdftex.def Info: ./fig/pqfunplot-1.pdf  used on input line 11.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [39
+
+ <./fig/pqfunplot-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/circlebasics-1.pdf, id=634, 180.675pt x 151.56625pt>
+File: ./fig/circlebasics-1.pdf Graphic file (type pdf)
+<use ./fig/circlebasics-1.pdf>
+Package pdftex.def Info: ./fig/circlebasics-1.pdf  used on input line 14.
+(pdftex.def)             Requested size: 138.84729pt x 116.4774pt.
+) [40
+
+ <./fig/circlebasics-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [41
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 
+9.
+("C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/lm\ts1lmtt.fd"
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)) [42
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/exfunsolb-1.pdf, id=675, 433.62pt x 216.81pt>
+File: ./fig/exfunsolb-1.pdf Graphic file (type pdf)
+<use ./fig/exfunsolb-1.pdf>
+Package pdftex.def Info: ./fig/exfunsolb-1.pdf  used on input line 11.
+(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+) [43
+
+ <./fig/exfunsolb-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/exfunsolc-1.pdf, id=693, 433.62pt x 216.81pt>
+File: ./fig/exfunsolc-1.pdf Graphic file (type pdf)
+<use ./fig/exfunsolc-1.pdf>
+Package pdftex.def Info: ./fig/exfunsolc-1.pdf  used on input line 16.
+(pdftex.def)             Requested size: 225.62819pt x 112.81462pt.
+) [44
+
+ <./fig/exfunsolc-1.pdf>] (LoopFun.toc) [45
+
+] [46
+
+] (LoopFun.toc) [47
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [48
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [49
+
+]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb
+<./fig/PQ_lsc-1.pdf, id=786, 433.62pt x 201.75375pt>
+File: ./fig/PQ_lsc-1.pdf Graphic file (type pdf)
+<use ./fig/PQ_lsc-1.pdf>
+Package pdftex.def Info: ./fig/PQ_lsc-1.pdf  used on input line 13.
+(pdftex.def)             Requested size: 347.12355pt x 161.51712pt.
+) [50
+
+ <./fig/PQ_lsc-1.pdf>]
+\openout4 = `LoopFun.vrb'.
+
+(LoopFun.vrb) [51
+
+] (LoopFun.toc) [52
+
+] [53
+
+]
+\tf@nav=\write6
+\openout6 = `LoopFun.nav'.
+
+\tf@toc=\write7
+\openout7 = `LoopFun.toc'.
+
+\tf@snm=\write8
+\openout8 = `LoopFun.snm'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1434.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1434.
+(LoopFun.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1434.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1434.
+
+Package rerunfilecheck Info: File `LoopFun.out' has not changed.
+(rerunfilecheck)             Checksum: FBFD07FAE74BFF205C7CD56205A28F8D;314.
+ ) 
 Here is how much of TeX's memory you used:
- 16212 strings out of 492450
- 307634 string characters out of 3119070
- 385891 words of memory out of 3000000
- 20229 multiletter control sequences out of 15000+200000
- 4245 words of font info for 16 fonts, out of 3000000 for 9000
+ 25073 strings out of 492450
+ 453177 string characters out of 3119070
+ 556343 words of memory out of 3000000
+ 28538 multiletter control sequences out of 15000+200000
+ 67827 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,0n,57p,918b,277s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 58i,14n,63p,1094b,1030s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1
+.enc}{C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-
+ec.enc}{C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/l
+m-rm.enc}{C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-mathsy.enc}{C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dv
+ips/lm/lm-mathit.enc}{C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/
+enc/dvips/fontawesome/fontawesometwo.enc}<C:/Users/jbreier/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/jbreier/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/jb
+reier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Use
+rs/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss10.pfb><
+C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmss12
+.pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/
+lmss8.pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/lm/lmssbo10.pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmsso10.pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/lm/lmsso8.pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/lm/lmsso9.pfb><C:/Users/jbreier/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/jbreier/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/jbreier/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtk10.pfb><C:/Users/jbreier/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Users/jbreier/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb><C:/Users/jbr
+eier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb><C:/User
+s/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt9.pfb><C:
+/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtti10.
+pfb><C:/Users/jbreier/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/wasy
+/wasy10.pfb>
+Output written on LoopFun.pdf (53 pages, 914631 bytes).
+PDF statistics:
+ 942 PDF objects out of 1000 (max. 8388607)
+ 116 named destinations out of 1000 (max. 500000)
+ 225 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-C:\Users\jbreier\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerinner
-themedefault.sty:16:  ==> Fatal error occurred, no output PDF file produced!
