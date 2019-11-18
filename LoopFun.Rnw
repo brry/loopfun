@@ -150,12 +150,13 @@ for(i in 1:50)
 \begin{center}
     \begin{columns}
     \column{15em}
-    \begin{block}{}{\Large ~loops and functions in~ \includegraphics[width=0.7cm]{externalfig/Rlogo.png}}
+    \begin{block}{}{\Large ~loops and functions in \includegraphics[width=0.7cm]{externalfig/Rlogo.png}}
     \end{block}
     \end{columns}
 \vspace{1em}
 Berry Boessenkool, \texttt{berry-b@gmx.de}\\
 Jannes Breier, \texttt{jbreier@gfz-potsdam.de}\\[1em]
+\href{https://gitext.gfz.de}{gitext URL}\\[1em]
 These slides and tasks are a subset of Berry's teaching material at\\
 \href{https://github.com/brry/course}{github.com/brry/course}\\[1em]
 These slides are licenced under
@@ -183,256 +184,14 @@ PDF created on \the\year-\leadingzero{\month}-\leadingzero{\day}, \currenttime\ 
 \item Berry Boessenkool $\rightarrow$ Geoecology @ Potsdam University
 \item R Fan\onslide<+->atic \onslide<+-> since 2010
 \item Developer of \href{https://github.com/brry/rdwd\#rdwd}{\texttt{rdwd}},
- \onslide<+-> Freelance trainer \& consultant \href{https://brry.github.io}{\includegraphics[width=0.5cm]{externalfig/Blogo.png}}\\[1em]
+ \onslide<+-> Freelance trainer \& consultant \href{https://brry.github.io}{\includegraphics[width=0.5cm]{externalfig/Blogo.png}}\\[2em]
 \item Jannes Breier $\rightarrow$ Geoecology @ Potsdam University
 \item Berry taught me R in 2013 \smiley{}
-\item \href{https://www.linkedin.com/in/jbreier/}{\faLinkedinSquare} Research Software Engineer at GFZ, \href{https://www.gfz-potsdam.de/en/staff/jannes-breier/sec44/}{\includegraphics[width=0.65cm]{externalfig/GFZ.png}} Sec.4.4: Hydrology \\[1em]
+\item \href{https://www.linkedin.com/in/jbreier/}{\faLinkedinSquare} Research Software Engineer at GFZ, \href{https://www.gfz-potsdam.de/en/staff/jannes-breier/sec44/}{\includegraphics[width=0.65cm]{externalfig/GFZ.png}} Sec.4.4: Hydrology \\[2em]
 \item \alert{If we're proceeding too fast, please interrupt!}
 \end{itemize}
 \end{frame}
 
-\iffalse % commenting out Conditions section
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-\section{Conditions}
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Conditional execution I}
-Syntax for a single logical value:\\
-\rcode{\alert{if}(this\_is\_true) \{do\_something\} \alert{else} \{do\_other\_thing\}}\\[\baselineskip]
-\pause
-Syntax for a vector with several T/F values:\\
-\rcode{\alert{ifelse}(condition, expression1, expression2)}\\[\baselineskip]
-\pause
-If condition == TRUE, then expression1 is evaluated,
-if condition == FALSE, then expression2 is evaluated.\\[1em]
-\pause
-\begin{columns}
-\begin{column}{.40\textwidth}
-\texttt{7-3 > 2 \\
-\textcolor{blue}{class}(7-3 > 2 ) \\
-\textcolor{red}{if}(7-3 > 2) 18  \\
-\textcolor{red}{if}(7-3 > 5) 18  \\
-\textcolor{red}{if}(7-3 > 5) 18 \textcolor{red}{else} 17 }
-\end{column}
-\begin{column}{.59\textwidth}
-\pause TRUE\\
-\pause logical = truth value, boolean\\
-\pause Condition is TRUE, so 18 is returned\\
-\pause Condition is FALSE, so nothing happens\\
-\pause Condition FALSE, so 17 is returned.
-\end{column}
-\end{columns}
-%' <<cond1b, eval=FALSE, size="small">>=
-%' 7-3 > 2                # TRUE
-%' class(7-3 > 2 )        # logical = truth value, boolean
-%' if(7-3 > 2) 18         # Condition is TRUE, so 18 is returned
-%' if(7-3 > 5) 18         # Condition is FALSE, so nothing happens
-%' if(7-3 > 5) 18 else 17 # Cond. F, so 17 is returned.
-%' @
-%' % onslide doesn't work in a verbatim (fragile) environment
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Conditional execution II}
-<<cond2, echo=TRUE, eval=FALSE, tidy=FALSE>>=
-# Several commands must be held together with curly braces:
-if(TRUE)
-  {
-  plot(1:10, main="TRUE in code")
-  box("figure", col=4, lwd=3)
-  } else
-# do something else: plot random numbers
-    {
-    plot(rnorm(500), main="FALSE in code")
-    }
-# these last brackets can (but should not) be left away
-# indenting code makes it readable for humans
-
-par(mfrow=c(1,2), cex=1, las=1)
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Conditional execution III}
-<<cond3, echo=FALSE, eval=TRUE, tidy=FALSE>>=
-par(mfrow=c(1,2), cex=1, las=1)
-if(TRUE)
-  {
-  plot(1:10, main="TRUE in code")
-  box("figure", col=4, lwd=3)
-  } else
-    {
-    plot(rnorm(500), main="FALSE in code")
-    }
-if(FALSE)
-  {
-  plot(1:10, main="TRUE in code")
-  box("figure", col=4, lwd=3)
-  } else
-    {
-    plot(rnorm(500), main="FALSE in code")
-    }
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Vectorising: \alert{if}(c) e1 \alert{else} e2 ~~~ vs ~~~ \alert{ifelse}(c, e1, e2)}
-<<ifelse_vectorized1>>=
-v <- c(13, 14, 15, 16, 17)
-v>14
-@
-\pause
-<<ifelse_vectorized2>>=
-ifelse(v>14, v+10, NA) # can handle vector of input
-@
-\pause
-<<ifelse_vectorized3>>=
-if(v>14) v+10 else NA
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Time to practice}
-\begin{exercise}{if else - Conditional code execution} %ex
-\begin{enumerate}
-  \item \rcode{sqrt} returns NaN for the negative values in \rcode{v <- -3:5} and warns about it. With a conditional expression, pass 0 instead of negative values to \rcode{sqrt}.
-  \item Construct a statement that checks whether the variable \rcode{input <- 4} is a number smaller than 3. Let it write a useful \rcode{message} to the console (for both cases). Now test it with \rcode{input <- 1.8} and \rcode{input <- -17}.
-  \item Now restrict the correct value of input to \emph{positive} numbers <3, i.e. the number must be <3 AND $\geq$ 0.
-  \item BONUS 1: What happens if \rcode{input <- "2"} or if \rcode{input <- "b"}?
-  \item BONUS 2: Create a character variable that, depending on the result of \rcode{rnorm(1)}, is initiated with probable or unlikely.
-  \item BONUS 3: \rcode{replicate} this experiment 1000 times and examine the result with \rcode{table}.
-  \item BONUS 4: How could you do this with \rcode{ifelse}?
-\end{enumerate}
-\end{exercise}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.1: if else}
-<<excondsol1a, eval=TRUE, size="footnotesize", echo=-1>>=
-options(width=80, digits=5)
-v <- -3:5
-sqrt(v)
-@
-<<excondsol1b, eval=TRUE, size="footnotesize", echo=-1>>=
-options(width=80, digits=5)
-ifelse( v >= 0, sqrt(v), 0)
-@
-<<excondsol1c, eval=TRUE, size="footnotesize", echo=-1>>=
-options(width=80, digits=5)
-sqrt(ifelse( v >= 0, v, 0))
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.2: if else}
-<<excondsol2, eval=TRUE, echo=-1>>=
-options(width=80)
-input <- 4
-if( input >= 3 ) message("Input was wrong.
-                         It should be <3") else
-                 message("Input OK")
-
-# run it again after
-input <- 1.8
-input <- -17
-@
-<<resetopts2, echo=F>>=
-options(width=50)
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.3: if else}
-<<excondsol3, eval=FALSE>>=
-# three different solutions:
-if( input >= 3 ) message("Input is > 3") else
-if( input < 0 )  message("Input is < 0") else
-                 message("Input OK")
-
-if( input >= 3 |  input < 0)
-   message("Input outside 0...3") else
-   message("Input OK")
-
-if( input > 0  &  input <= 3 )   message("Input OK") else
-           message("Input (",input,") outside 0...3")
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.3: if else BONUS}
-<<ifelseexbonus, eval=FALSE>>=
-result <- if(rnorm(1)>2) "unlikely" else "probable"
-
-result <- replicate(n=1000, expr=
-             if(rnorm(1)>2) "unlikely" else "probable")
-table(result)
-
-result <- ifelse(rnorm(1000)>2, "unlikely", "probable")
-table(result)
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Notes on logical values}
-\begin{itemize}[<+->]
-\item as you might have seen in \rcode{read.table(header=T)}, logical values (TRUE, FALSE) can be abbreviated.
-\item If you want to play a mean prank on someone, write\\ \rcode{T <- FALSE; F <- TRUE} in their \href{https://rclickhandbuch.wordpress.com/install-r/rprofile/}{Rprofile} (see \rcode{?Startup}).
-\item Logical (boolean) values F and T internally are often converted to integers 0 and 1, thus \rcode{sum(c(T,F,F,T,T,T,F,F,T))} is the number of TRUEs in a vector, \rcode{mean} yields the proportion of TRUEs.
-\item \rcode{which(logicalVec)} gives the indices (positions) of TRUE values.
-\item \rcode{Vec[logicalVec]} returns only the values of vec corresponding to TRUE in logicalVec (No need to wrap it into \rcode{which}).
-\item Logical operators: \rcode{!, \&, |, xor()} (not, and, or, exclusive or)
-% \item \rcode{cat(T, letters[c(12,15,22,5)])}
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Notes on conditional code execution}
-\begin{itemize}[<+->]
-\item \rcode{\alert{if}(c)\{ex1\}} is valid code, thus R doesn't expect \alert{else} anymore.
-\item If you execute code line by line (in a script, for example), \alert{\}} and \alert{else} must be on the same line.
-\item Many people consider it good practice to do this in functions as well, but for machine-readability, it is technically fine to write\\
-\texttt{\alert{if}(cond)\\
-~~\{\\
-~~ex1a\\
-~~ex1b\\
-~~\} \\
-\alert{else}\\
-~~ex2}
-\item \rcode{\alert{if}(logicalValue==TRUE) ...} is usually unnecessary, you can write\\
-\onslide<+-> \rcode{\alert{if}(logicalValue) ...}, but sometimes,\\
-\onslide<+->  \rcode{\alert{if}(isTRUE(logicalValue)) ...} helps to deal with NAs.
-% \item \rcode{cat(T, letters[c(12,15,22,5)])}
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}{Actual usage of if else statements}
-See the \rcode{hist} source code: \\
-\href{https://github.com/wch/r-source/blob/trunk/src/library/graphics/R/hist.R}{github.com/wch/r-source ~ -> ~ src / library / graphics / R / hist.R}\\[1em]
-\pause
-<<mad, eval=F>>=
-mad
-@
-\pause
-Multiple nested conditionals\\
-\texttt{\alert{if}(a) b \alert{else} \alert{if}(c) d \alert{else} e}\\
-can be avoided with \rcode{switch}.
-\end{frame}
-
-\fi % commenting out Conditions section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{For loops}
@@ -564,131 +323,10 @@ lines(x, 12.5*n/factorial(n-1)*(x/8*n)^(n-1)*exp(-x/8*n), col=2)
 %
 \end{frame}
 
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for loops shouldn't grow a vector}
-Bad practice - R needs to recreate the vector each time:
-<<for_loop_init1, eval=FALSE, size="small">>=
-output <- NA
-for(column in 1:5) output[column] <- median(iris[ ,column])
-@
-\pause
-This internally does the same thing as:
-<<for_loop_init2, eval=FALSE, size="small">>=
-output <- vector(mode="numeric", length=0)
-for(column in 1:5) output <- c(output, median(iris[ ,column])  )
-@
-\pause
-Good practice - first tell R how big the output will be, so it can be adequately allocated in memory:
-<<for_loop_init3, eval=FALSE, size="small">>=
-output <- vector(mode="numeric", length=5)
-for(column in 1:5) output[column] <- median(iris[ ,column])
-@
-\end{frame}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{for loops exercise}
-\begin{exercise}{for loops in file creation}
-\scriptsize
-We'll write many datasets to disc (and read them back).
-\begin{enumerate}
-\item With \rcode{paste0}, print a filename of the structure "mydata\_123.txt" 
-      using the name, the number and the file ending as inputs. 
-      We'll be changing the number later in a loop.
-\item Print a data.frame with two columns, each with 10 random numbers: 
-      one column from the normal, one from the exponential distribution
-\item With \rcode{write.table}, write such a table to a file in a subfolder (remember \rcode{dir.create}), 
-      using the number of rows (e.g. 10) in the filename.\\
-\item BONUS: change the arguments so that row numbers and quotation marks are not printed and tabstops are used for column separation.
-\item With a \rcode{for}-loop, now write files for different sample sizes, e.g. 10, 20, 50, 100, 500.
-\item Using the output of \rcode{dir()}, read all the files into a list of data.frames.
-      Remember to first create an empty list of the right length.
-\item BONUS: name the list elements according to the filenames. 
-\item BONUS: now replace the whole construct with an \rcode{lapply} loop. 
-      Celebrate how much nicer your code looks. 
-      Check how you can get element names with \rcode{sapply(..., simplify=FALSE)}
-\item BONUS: With \rcode{unlink}, delete the files from this exercise. 
-      This function is vectorizable, so there's no need to do this in a for loop!
-\end{enumerate}
-\end{exercise}
-\normalsize
-\end{frame}
-
-%------------------------------------------------------------%
-
-% \begin{frame}[fragile]{Recap \alert{for} loop}
-% \pause
-% With \rcode{rexp(n, rate)}, random numbers can be generated from the exponential distribution.\\
-% With \rcode{paste0("someText\_", 1)}, character strings and numbers can be concatenated.\\ 
-% With \rcode{write.table(x, file)}, data can be written to a file.\\
-% Using a \alert{for} loop, write three datasets to separate .txt files with 5, 20 and 100 exponentially distributed random numbers.\\
-% BONUS: format the file nicely with the \rcode{write.table()} options. 
-% \pause
-% <<recapfor, size="small">>=
-% for(n in c(5,20,100)) 
-%   write.table(rexp(n), file=paste0("random_", n, ".txt"))
-% @
-% \end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for loops exercise solution}
-<<forloops_file_writing, eval=FALSE, size="footnotesize">>=
-dir.create("loopexercise")
-for(n in c(10,20,50,100,500)) 
-    write.table(x=data.frame(norm=rnorm(n), exp=rexp(n)), 
-                file=paste0("loopexercise/randomdata_", n, ".txt"),
-                quote=F, row.names=F, sep="\t")
-
-fnames <- dir("loopexercise", full=TRUE)
-fcontents <- vector("list", length=length(fnames))
-for(fnum in seq_along(fnames)) 
-   fcontents[[fnum]] <- read.table(fnames[fnum], header=TRUE)
-
-flist <- sapply(dir("loopexercise", full=TRUE), read.table, header=TRUE, 
-                simplify=FALSE)
-
-unlink(paste0("loopexercise/randomdata_", c(10,20,50,100,500), ".txt"))
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{\rcode{seq\_along(n)} is safer than \rcode{1:n} in \alert{for} loops}
-\pause
-\vspace{-0.5em}
-<<seq_along0, size="scriptsize">>=
-do_something <- function(x) if(x<1) stop("x must be >=1, not:", x) else x
-something <- 1:6
-@
-\pause
-You'll often see the dangerous code \rcode{\alert{for}(i in 1:n)}: \vspace{-0.7em}
-<<seq_along1, size="footnotesize">>=
-for(i in 1:length(something)) do_something(i) # works with current sth
-@
-\pause
-Imagine this:\vspace{-0.5em}
-<<seq_along2, size="footnotesize">>=
-something <- which(letters=="4")
-for(i in 1:length(something)) do_something(i) # fails! (same code!)
-@
-\pause
-Safer to use is:\vspace{-0.7em}
-<<seq_along3>>=
-for(i in seq_along(something)) do_something(i)
-@
-\pause
-Because:\vspace{-0.5em}
-<<seq_along4, size="scriptsize">>=
-1:length(something)     ;   seq_along(something)
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{stocks data from \href{http://finance.yahoo.com}{finance.yahoo.com}}
-<<stocks_datapreparation, size="scriptsize", eval=F>>=
+<<stocks_datapreparation, eval=F, echo=FALSE>>=
 # Download current datasets:
 if(!requireNamespace("quantmod")) install.packages("quantmod")
 if(!requireNamespace("pbapply"))  install.packages("pbapply")
@@ -709,135 +347,66 @@ colnames(stocks) <- c(Index="Date", F="FORD", VLKAF="VOLKSWAGEN",
 # Save to disc:
 write.table(stocks, file="data/stocks.txt", row.names=F, quote=F)
 @
-\end{frame}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{For loops: multipanel graphics: the task}
+\begin{frame}[fragile]{For loops exercise}
 \begin{exercise}{for loop}
 \begin{enumerate}
 \item Read \datalinkText{stocks.txt}, so that there are no factors in the data.frame
 \item Change the first column type from \texttt{char} to \texttt{date} with \rcode{?as.Date}
-\item What do you get with \rcode{plot(stocks[ ,1:2])}? Make it a line graph.
-\item With \rcode{par(mfrow...}, set up a two by three panel plot
-\item With a for loop, fill those with each stock time series
-\item BONUS 1: Make good annotations, including a main title (par oma, \rcode{mtext} with the outer argument)
-\item BONUS 2: Make the plot margins smaller (par mar), turn y axis labels upright (las) and move the axis labels closer to the plots (mgp).
-\item BONUS 3: Understand and comment each line of the data preparation. %Get your own files or use mine: \footnotesize{\datalinkBlob{finance/AAPL.txt}, \datalinkBlob{finance/AMZN.txt}, \datalinkBlob{finance/F.txt}, \datalinkBlob{finance/GOOG.txt}, \datalinkBlob{finance/VLKAY.txt}, \datalinkBlob{finance/YHOO.txt}}
+\item What do you get with \rcode{plot(stocks[ ,c(1,2)])}? Make it a line graph by setting the argument \texttt{type}.
+\item With a \rcode{for} loop, plot each stock time series, i.e. plot the \textit{i}th column over the first column.
+\item BONUS 1: Use good annotations (\texttt{main, ylab, xlab})
+\item BONUS 2: Turn y axis labels upright (\texttt{las})
+\item BONUS 3: With \rcode{par(mfrow...}, set up a two by three panel plot
 \end{enumerate}
 \end{exercise}
 \end{frame}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{For loops: multipanel graphics: the solution}
+\begin{frame}[fragile]{For loops exercise solution}
 \vspace{-1em}
-<<forpanel, size="footnotesize", fig.height=2.8>>=
-stocks <- read.table("data/stocks.txt", header=T, as.is=T)
+<<forpanel, size="footnotesize", fig.height=2.8, echo=-3>>=
+stocks <- read.table("data/stocks.txt", header=T, stringsAsFactors=FALSE)
 stocks$Date <- as.Date(stocks$Date)
-par(mfrow=c(2,3), mar=c(2,4,1,1), mgp=c(2.5,0.7,0),oma=c(0,0,2,0),las=1)
-for(i in 2:7) plot(stocks[ ,c(1,i)], type="l")
-mtext("stocks this decade", line=0, outer=TRUE)
+par(mfrow=c(2,3), mar=c(2,4,2.5,1), mgp=c(2.5,0.7,0))
+for(i in 2:7) plot(stocks[ ,c(1,i)], type="l", main=colnames(stocks)[i], 
+                   ylab="Stock value", las=1)
 @
 \end{frame}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{For loops: multipanel graphics: beautifuller}
-\vspace{-1em}
-<<forpanel2, size="scriptsize", fig.height=2.5>>=
-par(mfrow=c(1,2), mar=c(4,4,2,0.1), mgp=c(2.5,0.7,0), cex=0.7, las=1)
-for(i in 2:3)
- {
- plot(stocks[ stocks$Date>as.Date("2016-04-01") , c(1,i) ],
-      main=colnames(stocks)[i], xaxt="n", type="l", xlab=" ",
-      ylab=if(i==2) "Adjusted daily share price  [USD]" else "")
- berryFunctions::monthAxis(1)
- }
-@
-\end{frame}
-
-\iffalse % commenting out lapply section
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-\section{lapply}
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for -> lapply I: basics}
-\vspace{-1em}
+\begin{frame}[fragile]{for -> lapply}
+\textbf{l}apply: apply a function to elements of a list (or vector)\\
+list: R object containing other objects
+\pause \vspace{-1em}
 <<for_lapply1, eval=FALSE>>=
 files <- dir("../rawdata", pattern="*.csv", full=TRUE)
-
-#
 @
-\pause \vspace{-2.7em}
+\pause \vspace{-1em}
 <<for_lapply2, eval=FALSE>>=
 # bad and slow way:
 ldfs <- list() # initiate empty list
 for(i in 1:length(files))
    ldfs[[i]] <- read.csv(files[i], as.is=TRUE)
-
-#
 @
-\pause \vspace{-2.7em}
+\pause \vspace{-1em}
 <<for_lapply3, eval=FALSE>>=
 # much better way: apply function to each file
 ldfs <- lapply(X=files, FUN=read.csv, as.is=TRUE)
-
-#
 @
-\pause \vspace{-2.7em}
-<<for_lapply4, eval=FALSE>>=
-# single data.frame if all files have n columns:
-df <- do.call(rbind, ldfs)
-
-#
-@
-\pause \vspace{-2.7em}
-<<for_lapply5, eval=FALSE>>=
-# PS: much faster in this example could be
-library("data.table") # fread + rbindlist
-ldfs <- lapply(X=files, FUN=fread, sep=",")
-df <- rbindlist(ldfs)
-@
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for -> lapply II: progress bar, names, indexing etc}
-\vspace{-0.6em}
-<<for_lapply6, eval=FALSE>>=
-ldfs <-   lapply(X=files, FUN=read.csv, as.is=TRUE)
-
-#
-@
-\pause \vspace{-3.48em}
+\pause \vspace{-1em}
 <<for_lapply7, eval=FALSE>>=
-# progress bar with remaining time
+# progress bar with remaining time (+ parallelized!)
 library("pbapply")
 ldfs <- pblapply(X=files, FUN=read.csv, as.is=TRUE)
-
-#
-@
-\pause \vspace{-3.48em}
-<<for_lapply8, eval=FALSE>>=
-# nice additional stuff:
-names(ldfs) <- files
-str(ldfs, max.level=1)
-ldfs[[2]] # second list element
-
-#
-@
-\pause \vspace{-3.58em}
-<<for_lapply9, eval=FALSE>>=
-# get third column / fifth row from each df:
-sapply(ldfs, "[",  , j=3)
-sapply(ldfs, "[", 5,    )
+ldfs <- pblapply(X=files, FUN=read.csv, as.is=TRUE, cl=8)
 @
 \end{frame}
 
-\fi % commenting out lapply section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{Functions}
@@ -871,10 +440,10 @@ myfunct(   c(5,11,3,7)  )
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{Functions with more arguments}
+\begin{frame}[fragile]{Functions with more arguments + default values}
 <<funct4, size="small", echo=-1>>=
 par(mar=c(4,5,1,1), mgp=c(2.8,0.8,0))
-myfunct <- function(x, type="o", ...) plot(x, type=type, ...)
+myfunct <- function(x, type="b", ...) plot(x, type=type, ...)
 # type="o" is now the default, thus used unless specified
 # The ellipsis (...) passes arguments to other functions
 myfunct(  c(5,11,3,7) , col="red", las=1)
@@ -884,27 +453,40 @@ myfunct(  c(5,11,3,7) , col="red", las=1)
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{Functions: example I}
-If you needed to find the zeros of quadratic functions very often, you could use
-<<funct5, echo=T, eval=T, tidy=FALSE>>=
-pq <- function(p,q) # y = x^2 + px + q
-              {
-              w <- sqrt( p^2 / 4 - q )
-              c(-p/2-w, -p/2+w)
-              } # End of function
-
-pq(3, -12)
+\begin{frame}[fragile]{Conditional execution}
+Syntax:
+\rcode{\alert{if}(this\_is\_true) \{do\_something\}}\\
+\pause
+\rcode{\alert{if}(this\_is\_true) \{do\_something\} \alert{else} \{do\_other\_thing\}}\\[0.8em]
+\pause
+If condition == TRUE, then expression1 is evaluated,\\
+if condition == FALSE, then expression2 is evaluated.\\[0.8em]
+\pause
+\begin{columns}
+\begin{column}{.40\textwidth}
+\texttt{7-3 > 2 \\
+\textcolor{blue}{class}(7-3 > 2 ) \\
+\textcolor{red}{if}(7-3 > 2) 18  \\
+\textcolor{red}{if}(7-3 > 5) 18  \\
+\textcolor{red}{if}(7-3 > 5) 18 \textcolor{red}{else} 17 }
+\end{column}
+\begin{column}{.59\textwidth}
+\pause TRUE\\
+\pause logical = truth value, boolean\\
+\pause Condition is TRUE, so 18 is returned\\
+\pause Condition is FALSE, so nothing happens\\
+\pause Condition FALSE, so 17 is returned.
+\end{column}
+\end{columns}
+\pause \vspace{0.8em}
+<<stopfun, eval=F>>=
+if(length(input)>1) 
+  stop("length must be 1, not ", length(input))
 @
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Functions: example II}
-<<pqfunplot>>=
-x <- seq(-10, 10, len=100)
-plot(x,  x^2 +3*x -12, type="l", col=2)
-abline(h=0, v=0)
-@
+\pause \vspace{-0.3em}
+\rcode{stop}: Interrupts function execution and gives error\\
+\rcode{warning}: continues but gives warning\\
+\rcode{message}: to inform instead of worry the user\\[1em]
 \end{frame}
 
 %------------------------------------------------------------%
@@ -913,7 +495,8 @@ abline(h=0, v=0)
 <<circlebasics, echo=-1, fig.height=2.1, fig.width=2.5, out.width="0.4\\textwidth">>=
 par(mar=c(2,2,1,1), las=1)
 plot(1:10, asp=1) # aspect ratio y/x of graph range
-grid(col=1) # the next part sould go into a function:
+grid(col=1) 
+# the next part sould go into a function:
 x <- 8 ;  y <- 6 ;  r <-2
 p <- seq(0, 2*pi, len=50)
 cx <- x+r*cos(p) ;  cy <- y+r*sin(p)
@@ -928,12 +511,13 @@ polygon(cx, cy)
 Write a function that
 \begin{enumerate}
   \item - draws a circle with a certain radius at user-specified locations of an existing plot (see last slide).
-  \item - uses ellipsis to allow the user to customize the appearance
+  \item - uses ellipsis (\rcode{...}) to allow the user to customize the appearance
   \item - checks all the arguments and gives useful warnings if the wrong type of input is provided
   \item - has useful explanations for each argument (documentation)
   \item - has readable indentation, spacing and comments explaining the code
   \item Now let your neighbor use it without explaining how it is to be used (this should be inferred from the code and comments!)
   \item Use your neighbor's function with a vector to draw several circles at once. (unintended use?) What happens?
+  \item BONUS: Learn writing packages at \datalinkText{packdev.R}
 \end{enumerate}
 \end{exercise}
 \end{frame}
@@ -941,9 +525,8 @@ Write a function that
 %------------------------------------------------------------%
 
 \begin{frame}[fragile]
-<<exfunsola, size="scriptsize">>=
+<<exfunsola_1, size="scriptsize", eval=FALSE>>=
 # Small helper function drawing circles into existing graphics
-# Berry Boessenkool, berry-b@gmx.de, 2012
 circle <- function(
   x, # x-coordinate of points, numeric value of length 1
   y, # ditto for y
@@ -951,16 +534,30 @@ circle <- function(
   locnum=100, # number of points on circle (more means smoother but slower)
   ...) # Further Arguments passed to polygon, like col, border, lwd
  {
+  
+ #
+@
+\pause \vspace{-2.5em}
+<<exfunsola_2, size="scriptsize", eval=FALSE>>=
  # input checking - only one circle can be drawn:
  if(length(x) >1 | length(y) >1 | length(r) >1 | length(locnum) >1)
    {
    warning("Only the first element of the vectors is used.")
    x <- x[1]; y <- y[1]; r <- r[1]; locnum <- locnum[1]
    }
- # input checking - is every value numeric?
+
+ #
+@
+\pause \vspace{-2.5em}
+<<exfunsola_3, size="scriptsize", eval=FALSE>>= # input checking - is every value numeric?
  if(!is.numeric(x)) stop("x must be numeric, not ", class(x))
  if(!is.numeric(y)) stop("y must be numeric, not ", class(y))
  if(!is.numeric(r)) stop("r must be numeric, not ", class(r))
+
+ #
+@
+\pause \vspace{-2.5em}
+<<exfunsola_4, size="scriptsize", eval=FALSE>>=  
  # prepare circle line coordinates:
  cx <- x+r*cos( seq(0,2*pi,len=locnum) )
  cy <- y+r*sin( seq(0,2*pi,len=locnum) )
@@ -968,6 +565,30 @@ circle <- function(
  }
 # Note: if circles look like ellipsis, use plot(... asp=1)
 @
+<<circlesdef, echo=FALSE>>=
+circle <- function(
+x, # x-coordinate of points, numeric value of length 1
+y, # ditto for y
+r, # radius of the circle, in the graphic's units
+locnum=100, # number of points on circle (more means smoother but slower)
+...) # Further Arguments passed to polygon, like col, border, lwd
+{
+## input checking - only one circle can be drawn:
+if(length(x) >1 | length(y) >1 | length(r) >1 | length(locnum) >1)
+{
+warning("Only the first element of the vectors is used.")
+x <- x[1]; y <- y[1]; r <- r[1]; locnum <- locnum[1]
+}
+# if(!is.numeric(x)) stop("x must be numeric, not ", class(x))
+if(!is.numeric(y)) stop("y must be numeric, not ", class(y))
+if(!is.numeric(r)) stop("r must be numeric, not ", class(r))
+# # prepare circle line coordinates:
+cx <- x+r*cos( seq(0,2*pi,len=locnum) )
+cy <- y+r*sin( seq(0,2*pi,len=locnum) )
+polygon(cx, cy, ...) # actually draw it
+}
+@
+
 \end{frame}
 
 %------------------------------------------------------------%
@@ -984,8 +605,8 @@ circle(15,10, r=4, locnum=12, col=2, border=4, lwd=3)
 %------------------------------------------------------------%
 
 \begin{frame}[fragile]{Solution for exercise \arabic{exercisecount} III: functions}
-<<exfunsolc, echo=-1, size="scriptsize", out.width='0.65\\textwidth'>>=
-par(mar=c(3,3,0,0), las=1, cex=2)  ; plot(1:20, type="n")
+<<exfunsolc, echo=-1, size="scriptsize", out.width='0.4\\textwidth'>>=
+par(mar=c(3,3,0.5,0.5), las=1, cex=2)  ; plot(1:20, type="n", asp=1)
 # can not be vectorized:
 x <- sample(1:20, 15) ;  y <- sample(1:20, 15) ; r <- runif(20)*4
 circle(x,y,r, col=rgb(1,0.5,0,alpha=0.4), border=NA)
@@ -993,29 +614,7 @@ for(i in 1:15) circle(x[i],y[i],r[i], col=rgb(1,0.5,0,alpha=0.4), border=NA)
 @
 \end{frame}
 
-\iffalse % commenting out R packages section
-%------------------------------------------------------------%
-
-\section{Writing R packages}
-
-%------------------------------------------------------------%
-
-\begin{frame}{Why you should write R packages}
-\pause
-\begin{itemize}[<+->]
-\item Collect your own functions in one place
-\item Combine functions and documentation in the right way
-\item Share code with others
-\item Make your research reproducible !
-\end{itemize}
-\onslide<+->
-\vspace{1em}
-Good introduction at \datalinkText{packdev.R}
-\end{frame}
-
-\fi % commenting out R packages section
-%------------------------------------------------------------%
-
+% ---------------------------
 
 \section{Debugging}
 
@@ -1035,18 +634,12 @@ You have just debugged a function.
 
 \item You want to step into the function you are developing at a specific point.
 You add \rcode{browser()} at that point of the code.
-You want to go line by line in one specific function. You set \rcode{debug(thatFunction)}.
-
-\item You want to learn about lexical scoping (Where does R find variables?).\\
-\small
-\href{http://trestletech.com/2013/04/package-wide-variablescache-in-r-package/}{http://trestletech.com/2013/04/package-wide-variablescache-in-r-package/}
-\href{http://adv-r.had.co.nz/Environments.html}{http://adv-r.had.co.nz/Environments.html}
 \end{itemize}
 \end{frame}
 
 % ---------------------------
 
-\begin{frame}[fragile]{Debugging: useful functions}
+\begin{frame}[fragile]{Debugging: useful functions + Resources}
 \begin{tabular}{ll}
 \pause source("projectFuns.R") & execute complete file\\
 \pause traceback() & find error source in sequence of function calls\\
@@ -1056,17 +649,8 @@ You want to go line by line in one specific function. You set \rcode{debug(thatF
 \pause debug(funct) & toggle linewise function execution\\
 \pause undebug(funct) & after calling and fixing funct\\
 \end{tabular}\\
-\pause
-\vspace{-0.5em}
-<<stopfun, eval=F, size="footnotesize">>=
-if(length(input)>1) stop("length must be 1, not ", length(input))
-@
-\vspace{-1em}
-\pause
-\rcode{stop}: Interrupts function execution and gives error\\
-\rcode{warning}: continues but gives warning\\
-\rcode{message}: to inform instead of worry the user\\[1em]
-\pause
+
+\pause \vspace{1em}
 \href{http://www.biostat.jhsph.edu/~rpeng/docs/R-debug-tools.pdf}{R. Peng (2002): Interactive Debugging Tools in R}\\
 \href{https://www.stats.umanitoba.ca/files/statsweb/2011/03/debugging.pdf}{D. Murdoch (2010): Debugging in R}\\
 \href{http://adv-r.had.co.nz/Exceptions-Debugging.html}{H. Wickham (2015): Advanced R: debugging}\\
@@ -1099,24 +683,9 @@ lsc_cal <- berryFunctions::lsc(calib$P, calib$Q, area=1.6)
 \begin{itemize}
 \item \rcode{stupid error you can easily remove} - traceback - find location of error - lsc\#73 - just comment it out
 \item \rcode{harder to find but still stupid} - traceback - nse\#11 - ditto
-\item \rcode{Error in plot: need finite 'ylim' value} - debug/browser/options(error=recover) - lsc\#105 - NAs in Q - range(Q, na.rm=TRUE) - also in other applicable locations
+\item \rcode{Error in plot: need finite 'ylim' value} - browser/options(error=recover) - lsc\#105 - NAs in Q - range(Q, na.rm=TRUE) - also in other applicable locations
 \item \rcode{There were 50 or more warnings} - come from rmse being called in optimization - add argument quietNA (or similar) to lsc that is passed to rmse in lsc\#79
 \end{itemize}
-\end{frame}
-
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-\section{Feedback}
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-
-\begin{frame}{Feedback}
-\center{
-Please fill out the feedback form at\\[1em]
-\href{https://bit.ly/feedbackR}{bit.ly/feedbackR}\\[1em]
-(it only takes a few minutes and helps to improve the course)\\[1em]
-Thanks!\\[1em]
-}
 \end{frame}
 
 %------------------------------------------------------------%

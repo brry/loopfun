@@ -155,12 +155,13 @@
 \begin{center}
     \begin{columns}
     \column{15em}
-    \begin{block}{}{\Large ~loops and functions in~ \includegraphics[width=0.7cm]{externalfig/Rlogo.png}}
+    \begin{block}{}{\Large ~loops and functions in \includegraphics[width=0.7cm]{externalfig/Rlogo.png}}
     \end{block}
     \end{columns}
 \vspace{1em}
 Berry Boessenkool, \texttt{berry-b@gmx.de}\\
 Jannes Breier, \texttt{jbreier@gfz-potsdam.de}\\[1em]
+\href{https://gitext.gfz.de}{gitext URL}\\[1em]
 These slides and tasks are a subset of Berry's teaching material at\\
 \href{https://github.com/brry/course}{github.com/brry/course}\\[1em]
 These slides are licenced under
@@ -188,312 +189,14 @@ PDF created on \the\year-\leadingzero{\month}-\leadingzero{\day}, \currenttime\ 
 \item Berry Boessenkool $\rightarrow$ Geoecology @ Potsdam University
 \item R Fan\onslide<+->atic \onslide<+-> since 2010
 \item Developer of \href{https://github.com/brry/rdwd\#rdwd}{\texttt{rdwd}},
- \onslide<+-> Freelance trainer \& consultant \href{https://brry.github.io}{\includegraphics[width=0.5cm]{externalfig/Blogo.png}}\\[1em]
+ \onslide<+-> Freelance trainer \& consultant \href{https://brry.github.io}{\includegraphics[width=0.5cm]{externalfig/Blogo.png}}\\[2em]
 \item Jannes Breier $\rightarrow$ Geoecology @ Potsdam University
 \item Berry taught me R in 2013 \smiley{}
-\item \href{https://www.linkedin.com/in/jbreier/}{\faLinkedinSquare} Research Software Engineer at GFZ, \href{https://www.gfz-potsdam.de/en/staff/jannes-breier/sec44/}{\includegraphics[width=0.65cm]{externalfig/GFZ.png}} Sec.4.4: Hydrology \\[1em]
+\item \href{https://www.linkedin.com/in/jbreier/}{\faLinkedinSquare} Research Software Engineer at GFZ, \href{https://www.gfz-potsdam.de/en/staff/jannes-breier/sec44/}{\includegraphics[width=0.65cm]{externalfig/GFZ.png}} Sec.4.4: Hydrology \\[2em]
 \item \alert{If we're proceeding too fast, please interrupt!}
 \end{itemize}
 \end{frame}
 
-\iffalse % commenting out Conditions section
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-\section{Conditions}
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Conditional execution I}
-Syntax for a single logical value:\\
-\rcode{\alert{if}(this\_is\_true) \{do\_something\} \alert{else} \{do\_other\_thing\}}\\[\baselineskip]
-\pause
-Syntax for a vector with several T/F values:\\
-\rcode{\alert{ifelse}(condition, expression1, expression2)}\\[\baselineskip]
-\pause
-If condition == TRUE, then expression1 is evaluated,
-if condition == FALSE, then expression2 is evaluated.\\[1em]
-\pause
-\begin{columns}
-\begin{column}{.40\textwidth}
-\texttt{7-3 > 2 \\
-\textcolor{blue}{class}(7-3 > 2 ) \\
-\textcolor{red}{if}(7-3 > 2) 18  \\
-\textcolor{red}{if}(7-3 > 5) 18  \\
-\textcolor{red}{if}(7-3 > 5) 18 \textcolor{red}{else} 17 }
-\end{column}
-\begin{column}{.59\textwidth}
-\pause TRUE\\
-\pause logical = truth value, boolean\\
-\pause Condition is TRUE, so 18 is returned\\
-\pause Condition is FALSE, so nothing happens\\
-\pause Condition FALSE, so 17 is returned.
-\end{column}
-\end{columns}
-%' <<cond1b, eval=FALSE, size="small">>=
-%' 7-3 > 2                # TRUE
-%' class(7-3 > 2 )        # logical = truth value, boolean
-%' if(7-3 > 2) 18         # Condition is TRUE, so 18 is returned
-%' if(7-3 > 5) 18         # Condition is FALSE, so nothing happens
-%' if(7-3 > 5) 18 else 17 # Cond. F, so 17 is returned.
-%' @
-%' % onslide doesn't work in a verbatim (fragile) environment
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Conditional execution II}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# Several commands must be held together with curly braces:}
-\hlkwa{if}\hlstd{(}\hlnum{TRUE}\hlstd{)}
-  \hlstd{\{}
-  \hlkwd{plot}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{10}\hlstd{,} \hlkwc{main}\hlstd{=}\hlstr{"TRUE in code"}\hlstd{)}
-  \hlkwd{box}\hlstd{(}\hlstr{"figure"}\hlstd{,} \hlkwc{col}\hlstd{=}\hlnum{4}\hlstd{,} \hlkwc{lwd}\hlstd{=}\hlnum{3}\hlstd{)}
-  \hlstd{\}} \hlkwa{else}
-\hlcom{# do something else: plot random numbers}
-    \hlstd{\{}
-    \hlkwd{plot}\hlstd{(}\hlkwd{rnorm}\hlstd{(}\hlnum{500}\hlstd{),} \hlkwc{main}\hlstd{=}\hlstr{"FALSE in code"}\hlstd{)}
-    \hlstd{\}}
-\hlcom{# these last brackets can (but should not) be left away}
-\hlcom{# indenting code makes it readable for humans}
-
-\hlkwd{par}\hlstd{(}\hlkwc{mfrow}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Conditional execution III}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}
-
-{\centering \includegraphics[width=\textwidth]{./fig/cond3-1} 
-
-}
-
-
-
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Vectorising: \alert{if}(c) e1 \alert{else} e2 ~~~ vs ~~~ \alert{ifelse}(c, e1, e2)}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{v} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlnum{13}\hlstd{,} \hlnum{14}\hlstd{,} \hlnum{15}\hlstd{,} \hlnum{16}\hlstd{,} \hlnum{17}\hlstd{)}
-\hlstd{v}\hlopt{>}\hlnum{14}
-\end{alltt}
-\begin{verbatim}
-## [1] FALSE FALSE  TRUE  TRUE  TRUE
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\pause
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{ifelse}\hlstd{(v}\hlopt{>}\hlnum{14}\hlstd{, v}\hlopt{+}\hlnum{10}\hlstd{,} \hlnum{NA}\hlstd{)} \hlcom{# can handle vector of input}
-\end{alltt}
-\begin{verbatim}
-## [1] NA NA 25 26 27
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\pause
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwa{if}\hlstd{(v}\hlopt{>}\hlnum{14}\hlstd{) v}\hlopt{+}\hlnum{10} \hlkwa{else} \hlnum{NA}
-\end{alltt}
-
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in if (v > 14) v + 10 else NA: the condition has length > 1 and only the first element will be used}}\begin{verbatim}
-## [1] NA
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Time to practice}
-\begin{exercise}{if else - Conditional code execution} %ex
-\begin{enumerate}
-  \item \rcode{sqrt} returns NaN for the negative values in \rcode{v <- -3:5} and warns about it. With a conditional expression, pass 0 instead of negative values to \rcode{sqrt}.
-  \item Construct a statement that checks whether the variable \rcode{input <- 4} is a number smaller than 3. Let it write a useful \rcode{message} to the console (for both cases). Now test it with \rcode{input <- 1.8} and \rcode{input <- -17}.
-  \item Now restrict the correct value of input to \emph{positive} numbers <3, i.e. the number must be <3 AND $\geq$ 0.
-  \item BONUS 1: What happens if \rcode{input <- "2"} or if \rcode{input <- "b"}?
-  \item BONUS 2: Create a character variable that, depending on the result of \rcode{rnorm(1)}, is initiated with probable or unlikely.
-  \item BONUS 3: \rcode{replicate} this experiment 1000 times and examine the result with \rcode{table}.
-  \item BONUS 4: How could you do this with \rcode{ifelse}?
-\end{enumerate}
-\end{exercise}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.1: if else}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{v} \hlkwb{<-} \hlopt{-}\hlnum{3}\hlopt{:}\hlnum{5}
-\hlkwd{sqrt}\hlstd{(v)}
-\end{alltt}
-
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in sqrt(v): NaNs produced}}\begin{verbatim}
-## [1]    NaN    NaN    NaN 0.0000 1.0000 1.4142 1.7321 2.0000 2.2361
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{ifelse}\hlstd{( v} \hlopt{>=} \hlnum{0}\hlstd{,} \hlkwd{sqrt}\hlstd{(v),} \hlnum{0}\hlstd{)}
-\end{alltt}
-
-
-{\ttfamily\noindent\color{warningcolor}{\#\# Warning in sqrt(v): NaNs produced}}\begin{verbatim}
-## [1] 0.0000 0.0000 0.0000 0.0000 1.0000 1.4142 1.7321 2.0000 2.2361
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{sqrt}\hlstd{(}\hlkwd{ifelse}\hlstd{( v} \hlopt{>=} \hlnum{0}\hlstd{, v,} \hlnum{0}\hlstd{))}
-\end{alltt}
-\begin{verbatim}
-## [1] 0.0000 0.0000 0.0000 0.0000 1.0000 1.4142 1.7321 2.0000 2.2361
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.2: if else}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{input} \hlkwb{<-} \hlnum{4}
-\hlkwa{if}\hlstd{( input} \hlopt{>=} \hlnum{3} \hlstd{)} \hlkwd{message}\hlstd{(}\hlstr{"Input was wrong.
-                         It should be <3"}\hlstd{)} \hlkwa{else}
-                 \hlkwd{message}\hlstd{(}\hlstr{"Input OK"}\hlstd{)}
-\end{alltt}
-
-
-{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Input was wrong.\\\#\#\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ It should be <3}}\begin{alltt}
-\hlcom{# run it again after}
-\hlstd{input} \hlkwb{<-} \hlnum{1.8}
-\hlstd{input} \hlkwb{<-} \hlopt{-}\hlnum{17}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.3: if else}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# three different solutions:}
-\hlkwa{if}\hlstd{( input} \hlopt{>=} \hlnum{3} \hlstd{)} \hlkwd{message}\hlstd{(}\hlstr{"Input is > 3"}\hlstd{)} \hlkwa{else}
-\hlkwa{if}\hlstd{( input} \hlopt{<} \hlnum{0} \hlstd{)}  \hlkwd{message}\hlstd{(}\hlstr{"Input is < 0"}\hlstd{)} \hlkwa{else}
-                 \hlkwd{message}\hlstd{(}\hlstr{"Input OK"}\hlstd{)}
-
-\hlkwa{if}\hlstd{( input} \hlopt{>=} \hlnum{3} \hlopt{|}  \hlstd{input} \hlopt{<} \hlnum{0}\hlstd{)}
-   \hlkwd{message}\hlstd{(}\hlstr{"Input outside 0...3"}\hlstd{)} \hlkwa{else}
-   \hlkwd{message}\hlstd{(}\hlstr{"Input OK"}\hlstd{)}
-
-\hlkwa{if}\hlstd{( input} \hlopt{>} \hlnum{0}  \hlopt{&}  \hlstd{input} \hlopt{<=} \hlnum{3} \hlstd{)}   \hlkwd{message}\hlstd{(}\hlstr{"Input OK"}\hlstd{)} \hlkwa{else}
-           \hlkwd{message}\hlstd{(}\hlstr{"Input ("}\hlstd{,input,}\hlstr{") outside 0...3"}\hlstd{)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Solution for exercise \arabic{exercisecount}.3: if else BONUS}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{result} \hlkwb{<-} \hlkwa{if}\hlstd{(}\hlkwd{rnorm}\hlstd{(}\hlnum{1}\hlstd{)}\hlopt{>}\hlnum{2}\hlstd{)} \hlstr{"unlikely"} \hlkwa{else} \hlstr{"probable"}
-
-\hlstd{result} \hlkwb{<-} \hlkwd{replicate}\hlstd{(}\hlkwc{n}\hlstd{=}\hlnum{1000}\hlstd{,} \hlkwc{expr}\hlstd{=}
-             \hlkwa{if}\hlstd{(}\hlkwd{rnorm}\hlstd{(}\hlnum{1}\hlstd{)}\hlopt{>}\hlnum{2}\hlstd{)} \hlstr{"unlikely"} \hlkwa{else} \hlstr{"probable"}\hlstd{)}
-\hlkwd{table}\hlstd{(result)}
-
-\hlstd{result} \hlkwb{<-} \hlkwd{ifelse}\hlstd{(}\hlkwd{rnorm}\hlstd{(}\hlnum{1000}\hlstd{)}\hlopt{>}\hlnum{2}\hlstd{,} \hlstr{"unlikely"}\hlstd{,} \hlstr{"probable"}\hlstd{)}
-\hlkwd{table}\hlstd{(result)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Notes on logical values}
-\begin{itemize}[<+->]
-\item as you might have seen in \rcode{read.table(header=T)}, logical values (TRUE, FALSE) can be abbreviated.
-\item If you want to play a mean prank on someone, write\\ \rcode{T <- FALSE; F <- TRUE} in their \href{https://rclickhandbuch.wordpress.com/install-r/rprofile/}{Rprofile} (see \rcode{?Startup}).
-\item Logical (boolean) values F and T internally are often converted to integers 0 and 1, thus \rcode{sum(c(T,F,F,T,T,T,F,F,T))} is the number of TRUEs in a vector, \rcode{mean} yields the proportion of TRUEs.
-\item \rcode{which(logicalVec)} gives the indices (positions) of TRUE values.
-\item \rcode{Vec[logicalVec]} returns only the values of vec corresponding to TRUE in logicalVec (No need to wrap it into \rcode{which}).
-\item Logical operators: \rcode{!, \&, |, xor()} (not, and, or, exclusive or)
-% \item \rcode{cat(T, letters[c(12,15,22,5)])}
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Notes on conditional code execution}
-\begin{itemize}[<+->]
-\item \rcode{\alert{if}(c)\{ex1\}} is valid code, thus R doesn't expect \alert{else} anymore.
-\item If you execute code line by line (in a script, for example), \alert{\}} and \alert{else} must be on the same line.
-\item Many people consider it good practice to do this in functions as well, but for machine-readability, it is technically fine to write\\
-\texttt{\alert{if}(cond)\\
-~~\{\\
-~~ex1a\\
-~~ex1b\\
-~~\} \\
-\alert{else}\\
-~~ex2}
-\item \rcode{\alert{if}(logicalValue==TRUE) ...} is usually unnecessary, you can write\\
-\onslide<+-> \rcode{\alert{if}(logicalValue) ...}, but sometimes,\\
-\onslide<+->  \rcode{\alert{if}(isTRUE(logicalValue)) ...} helps to deal with NAs.
-% \item \rcode{cat(T, letters[c(12,15,22,5)])}
-\end{itemize}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}{Actual usage of if else statements}
-See the \rcode{hist} source code: \\
-\href{https://github.com/wch/r-source/blob/trunk/src/library/graphics/R/hist.R}{github.com/wch/r-source ~ -> ~ src / library / graphics / R / hist.R}\\[1em]
-\pause
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{mad}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause
-Multiple nested conditionals\\
-\texttt{\alert{if}(a) b \alert{else} \alert{if}(c) d \alert{else} e}\\
-can be avoided with \rcode{switch}.
-\end{frame}
-
-\fi % commenting out Conditions section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{For loops}
@@ -684,228 +387,38 @@ In R, \rcode{for} loops are slow. Always try to vectorize (the best option, not 
 %
 \end{frame}
 
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for loops shouldn't grow a vector}
-Bad practice - R needs to recreate the vector each time:
-\begin{knitrout}\small
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{output} \hlkwb{<-} \hlnum{NA}
-\hlkwa{for}\hlstd{(column} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{5}\hlstd{) output[column]} \hlkwb{<-} \hlkwd{median}\hlstd{(iris[ ,column])}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause
-This internally does the same thing as:
-\begin{knitrout}\small
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{output} \hlkwb{<-} \hlkwd{vector}\hlstd{(}\hlkwc{mode}\hlstd{=}\hlstr{"numeric"}\hlstd{,} \hlkwc{length}\hlstd{=}\hlnum{0}\hlstd{)}
-\hlkwa{for}\hlstd{(column} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{5}\hlstd{) output} \hlkwb{<-} \hlkwd{c}\hlstd{(output,} \hlkwd{median}\hlstd{(iris[ ,column])  )}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause
-Good practice - first tell R how big the output will be, so it can be adequately allocated in memory:
-\begin{knitrout}\small
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{output} \hlkwb{<-} \hlkwd{vector}\hlstd{(}\hlkwc{mode}\hlstd{=}\hlstr{"numeric"}\hlstd{,} \hlkwc{length}\hlstd{=}\hlnum{5}\hlstd{)}
-\hlkwa{for}\hlstd{(column} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{5}\hlstd{) output[column]} \hlkwb{<-} \hlkwd{median}\hlstd{(iris[ ,column])}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{for loops exercise}
-\begin{exercise}{for loops in file creation}
-\scriptsize
-We'll write many datasets to disc (and read them back).
-\begin{enumerate}
-\item With \rcode{paste0}, print a filename of the structure "mydata\_123.txt" 
-      using the name, the number and the file ending as inputs. 
-      We'll be changing the number later in a loop.
-\item Print a data.frame with two columns, each with 10 random numbers: 
-      one column from the normal, one from the exponential distribution
-\item With \rcode{write.table}, write such a table to a file in a subfolder (remember \rcode{dir.create}), 
-      using the number of rows (e.g. 10) in the filename.\\
-\item BONUS: change the arguments so that row numbers and quotation marks are not printed and tabstops are used for column separation.
-\item With a \rcode{for}-loop, now write files for different sample sizes, e.g. 10, 20, 50, 100, 500.
-\item Using the output of \rcode{dir()}, read all the files into a list of data.frames.
-      Remember to first create an empty list of the right length.
-\item BONUS: name the list elements according to the filenames. 
-\item BONUS: now replace the whole construct with an \rcode{lapply} loop. 
-      Celebrate how much nicer your code looks. 
-      Check how you can get element names with \rcode{sapply(..., simplify=FALSE)}
-\item BONUS: With \rcode{unlink}, delete the files from this exercise. 
-      This function is vectorizable, so there's no need to do this in a for loop!
-\end{enumerate}
-\end{exercise}
-\normalsize
-\end{frame}
+
 
 %------------------------------------------------------------%
 
-% \begin{frame}[fragile]{Recap \alert{for} loop}
-% \pause
-% With \rcode{rexp(n, rate)}, random numbers can be generated from the exponential distribution.\\
-% With \rcode{paste0("someText\_", 1)}, character strings and numbers can be concatenated.\\ 
-% With \rcode{write.table(x, file)}, data can be written to a file.\\
-% Using a \alert{for} loop, write three datasets to separate .txt files with 5, 20 and 100 exponentially distributed random numbers.\\
-% BONUS: format the file nicely with the \rcode{write.table()} options. 
-% \pause
-% <<recapfor, size="small">>=
-% for(n in c(5,20,100)) 
-%   write.table(rexp(n), file=paste0("random_", n, ".txt"))
-% @
-% \end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for loops exercise solution}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{dir.create}\hlstd{(}\hlstr{"loopexercise"}\hlstd{)}
-\hlkwa{for}\hlstd{(n} \hlkwa{in} \hlkwd{c}\hlstd{(}\hlnum{10}\hlstd{,}\hlnum{20}\hlstd{,}\hlnum{50}\hlstd{,}\hlnum{100}\hlstd{,}\hlnum{500}\hlstd{))}
-    \hlkwd{write.table}\hlstd{(}\hlkwc{x}\hlstd{=}\hlkwd{data.frame}\hlstd{(}\hlkwc{norm}\hlstd{=}\hlkwd{rnorm}\hlstd{(n),} \hlkwc{exp}\hlstd{=}\hlkwd{rexp}\hlstd{(n)),}
-                \hlkwc{file}\hlstd{=}\hlkwd{paste0}\hlstd{(}\hlstr{"loopexercise/randomdata_"}\hlstd{, n,} \hlstr{".txt"}\hlstd{),}
-                \hlkwc{quote}\hlstd{=F,} \hlkwc{row.names}\hlstd{=F,} \hlkwc{sep}\hlstd{=}\hlstr{"\textbackslash{}t"}\hlstd{)}
-
-\hlstd{fnames} \hlkwb{<-} \hlkwd{dir}\hlstd{(}\hlstr{"loopexercise"}\hlstd{,} \hlkwc{full}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-\hlstd{fcontents} \hlkwb{<-} \hlkwd{vector}\hlstd{(}\hlstr{"list"}\hlstd{,} \hlkwc{length}\hlstd{=}\hlkwd{length}\hlstd{(fnames))}
-\hlkwa{for}\hlstd{(fnum} \hlkwa{in} \hlkwd{seq_along}\hlstd{(fnames))}
-   \hlstd{fcontents[[fnum]]} \hlkwb{<-} \hlkwd{read.table}\hlstd{(fnames[fnum],} \hlkwc{header}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-
-\hlstd{flist} \hlkwb{<-} \hlkwd{sapply}\hlstd{(}\hlkwd{dir}\hlstd{(}\hlstr{"loopexercise"}\hlstd{,} \hlkwc{full}\hlstd{=}\hlnum{TRUE}\hlstd{), read.table,} \hlkwc{header}\hlstd{=}\hlnum{TRUE}\hlstd{,}
-                \hlkwc{simplify}\hlstd{=}\hlnum{FALSE}\hlstd{)}
-
-\hlkwd{unlink}\hlstd{(}\hlkwd{paste0}\hlstd{(}\hlstr{"loopexercise/randomdata_"}\hlstd{,} \hlkwd{c}\hlstd{(}\hlnum{10}\hlstd{,}\hlnum{20}\hlstd{,}\hlnum{50}\hlstd{,}\hlnum{100}\hlstd{,}\hlnum{500}\hlstd{),} \hlstr{".txt"}\hlstd{))}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{\rcode{seq\_along(n)} is safer than \rcode{1:n} in \alert{for} loops}
-\pause
-\vspace{-0.5em}
-\begin{knitrout}\scriptsize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{do_something} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{)} \hlkwa{if}\hlstd{(x}\hlopt{<}\hlnum{1}\hlstd{)} \hlkwd{stop}\hlstd{(}\hlstr{"x must be >=1, not:"}\hlstd{, x)} \hlkwa{else} \hlstd{x}
-\hlstd{something} \hlkwb{<-} \hlnum{1}\hlopt{:}\hlnum{6}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause
-You'll often see the dangerous code \rcode{\alert{for}(i in 1:n)}: \vspace{-0.7em}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(something))} \hlkwd{do_something}\hlstd{(i)} \hlcom{# works with current sth}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause
-Imagine this:\vspace{-0.5em}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{something} \hlkwb{<-} \hlkwd{which}\hlstd{(letters}\hlopt{==}\hlstr{"4"}\hlstd{)}
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(something))} \hlkwd{do_something}\hlstd{(i)} \hlcom{# fails! (same code!)}
-\end{alltt}
-
-
-{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error in do\_something(i): x must be >=1, not:0}}\end{kframe}
-\end{knitrout}
-\pause
-Safer to use is:\vspace{-0.7em}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlkwd{seq_along}\hlstd{(something))} \hlkwd{do_something}\hlstd{(i)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause
-Because:\vspace{-0.5em}
-\begin{knitrout}\scriptsize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(something)     ;}   \hlkwd{seq_along}\hlstd{(something)}
-\end{alltt}
-\begin{verbatim}
-## [1] 1 0
-## integer(0)
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{stocks data from \href{http://finance.yahoo.com}{finance.yahoo.com}}
-\begin{knitrout}\scriptsize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# Download current datasets:}
-\hlkwa{if}\hlstd{(}\hlopt{!}\hlkwd{requireNamespace}\hlstd{(}\hlstr{"quantmod"}\hlstd{))} \hlkwd{install.packages}\hlstd{(}\hlstr{"quantmod"}\hlstd{)}
-\hlkwa{if}\hlstd{(}\hlopt{!}\hlkwd{requireNamespace}\hlstd{(}\hlstr{"pbapply"}\hlstd{))}  \hlkwd{install.packages}\hlstd{(}\hlstr{"pbapply"}\hlstd{)}
-\hlstd{dummy} \hlkwb{<-} \hlstd{pbapply}\hlopt{::}\hlkwd{pblapply}\hlstd{(}\hlkwd{c}\hlstd{(}\hlstr{"F"}\hlstd{,}\hlstr{"VLKAF"}\hlstd{,} \hlstr{"AMZN"}\hlstd{,}\hlstr{"AAPL"}\hlstd{,}\hlstr{"GOOG"}\hlstd{,}\hlstr{"MSFT"}\hlstd{),}
-   \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{) zoo}\hlopt{::}\hlkwd{write.zoo}\hlstd{(}\hlkwc{x}\hlstd{=quantmod}\hlopt{::}\hlkwd{getSymbols}\hlstd{(x,} \hlkwc{auto.assign}\hlstd{=}\hlnum{FALSE}\hlstd{)[,}\hlnum{6}\hlstd{],}
-                           \hlkwc{file}\hlstd{=}\hlkwd{paste0}\hlstd{(}\hlstr{"data/finance/"}\hlstd{,x,}\hlstr{".txt"}\hlstd{),} \hlkwc{col.names}\hlstd{=T))}
-
-\hlcom{# read single files to R and merge into one file:}
-\hlstd{stocks} \hlkwb{<-} \hlkwd{lapply}\hlstd{(}\hlkwd{dir}\hlstd{(}\hlstr{"data/finance"}\hlstd{,} \hlkwc{full}\hlstd{=}\hlnum{TRUE}\hlstd{),}
-                  \hlstd{read.table,} \hlkwc{as.is}\hlstd{=}\hlnum{TRUE}\hlstd{,} \hlkwc{header}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-\hlstd{stocks} \hlkwb{<-} \hlkwd{Reduce}\hlstd{(}\hlkwa{function}\hlstd{(}\hlkwc{...}\hlstd{)} \hlkwd{merge}\hlstd{(...,} \hlkwc{all}\hlstd{=T), stocks)}
-
-\hlcom{# Get nicer column names:}
-\hlstd{names} \hlkwb{<-} \hlkwd{sapply}\hlstd{(}\hlkwd{strsplit}\hlstd{(}\hlkwd{colnames}\hlstd{(stocks),} \hlstr{"."}\hlstd{,} \hlkwc{fix}\hlstd{=}\hlnum{TRUE}\hlstd{),}\hlstr{"["}\hlstd{,} \hlnum{1}\hlstd{)}
-\hlkwd{colnames}\hlstd{(stocks)} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlkwc{Index}\hlstd{=}\hlstr{"Date"}\hlstd{,} \hlkwc{F}\hlstd{=}\hlstr{"FORD"}\hlstd{,} \hlkwc{VLKAF}\hlstd{=}\hlstr{"VOLKSWAGEN"}\hlstd{,}
-         \hlkwc{AMZN}\hlstd{=}\hlstr{"AMAZON"}\hlstd{,} \hlkwc{AAPL}\hlstd{=}\hlstr{"APPLE"}\hlstd{,} \hlkwc{GOOG}\hlstd{=}\hlstr{"GOOGLE"}\hlstd{,} \hlkwc{MSFT}\hlstd{=}\hlstr{"MICROSOFT"}\hlstd{)[names]}
-
-\hlcom{# Save to disc:}
-\hlkwd{write.table}\hlstd{(stocks,} \hlkwc{file}\hlstd{=}\hlstr{"data/stocks.txt"}\hlstd{,} \hlkwc{row.names}\hlstd{=F,} \hlkwc{quote}\hlstd{=F)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{For loops: multipanel graphics: the task}
+\begin{frame}[fragile]{For loops exercise}
 \begin{exercise}{for loop}
 \begin{enumerate}
 \item Read \datalinkText{stocks.txt}, so that there are no factors in the data.frame
 \item Change the first column type from \texttt{char} to \texttt{date} with \rcode{?as.Date}
-\item What do you get with \rcode{plot(stocks[ ,1:2])}? Make it a line graph.
-\item With \rcode{par(mfrow...}, set up a two by three panel plot
-\item With a for loop, fill those with each stock time series
-\item BONUS 1: Make good annotations, including a main title (par oma, \rcode{mtext} with the outer argument)
-\item BONUS 2: Make the plot margins smaller (par mar), turn y axis labels upright (las) and move the axis labels closer to the plots (mgp).
-\item BONUS 3: Understand and comment each line of the data preparation. %Get your own files or use mine: \footnotesize{\datalinkBlob{finance/AAPL.txt}, \datalinkBlob{finance/AMZN.txt}, \datalinkBlob{finance/F.txt}, \datalinkBlob{finance/GOOG.txt}, \datalinkBlob{finance/VLKAY.txt}, \datalinkBlob{finance/YHOO.txt}}
+\item What do you get with \rcode{plot(stocks[ ,c(1,2)])}? Make it a line graph by setting the argument \texttt{type}.
+\item With a \rcode{for} loop, plot each stock time series, i.e. plot the \textit{i}th column over the first column.
+\item BONUS 1: Use good annotations (\texttt{main, ylab, xlab})
+\item BONUS 2: Turn y axis labels upright (\texttt{las})
+\item BONUS 3: With \rcode{par(mfrow...}, set up a two by three panel plot
 \end{enumerate}
 \end{exercise}
 \end{frame}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{For loops: multipanel graphics: the solution}
+\begin{frame}[fragile]{For loops exercise solution}
 \vspace{-1em}
 \begin{knitrout}\footnotesize
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{stocks} \hlkwb{<-} \hlkwd{read.table}\hlstd{(}\hlstr{"data/stocks.txt"}\hlstd{,} \hlkwc{header}\hlstd{=T,} \hlkwc{as.is}\hlstd{=T)}
+\hlstd{stocks} \hlkwb{<-} \hlkwd{read.table}\hlstd{(}\hlstr{"data/stocks.txt"}\hlstd{,} \hlkwc{header}\hlstd{=T,} \hlkwc{stringsAsFactors}\hlstd{=}\hlnum{FALSE}\hlstd{)}
 \hlstd{stocks}\hlopt{$}\hlstd{Date} \hlkwb{<-} \hlkwd{as.Date}\hlstd{(stocks}\hlopt{$}\hlstd{Date)}
-\hlkwd{par}\hlstd{(}\hlkwc{mfrow}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,}\hlnum{3}\hlstd{),} \hlkwc{mar}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,}\hlnum{4}\hlstd{,}\hlnum{1}\hlstd{,}\hlnum{1}\hlstd{),} \hlkwc{mgp}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{2.5}\hlstd{,}\hlnum{0.7}\hlstd{,}\hlnum{0}\hlstd{),}\hlkwc{oma}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,}\hlnum{0}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{0}\hlstd{),}\hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{2}\hlopt{:}\hlnum{7}\hlstd{)} \hlkwd{plot}\hlstd{(stocks[ ,}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,i)],} \hlkwc{type}\hlstd{=}\hlstr{"l"}\hlstd{)}
-\hlkwd{mtext}\hlstd{(}\hlstr{"stocks this decade"}\hlstd{,} \hlkwc{line}\hlstd{=}\hlnum{0}\hlstd{,} \hlkwc{outer}\hlstd{=}\hlnum{TRUE}\hlstd{)}
+\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{2}\hlopt{:}\hlnum{7}\hlstd{)} \hlkwd{plot}\hlstd{(stocks[ ,}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,i)],} \hlkwc{type}\hlstd{=}\hlstr{"l"}\hlstd{,} \hlkwc{main}\hlstd{=}\hlkwd{colnames}\hlstd{(stocks)[i],}
+                   \hlkwc{ylab}\hlstd{=}\hlstr{"Stock value"}\hlstd{,} \hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
 \end{alltt}
 \end{kframe}
 
@@ -920,50 +433,18 @@ Because:\vspace{-0.5em}
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{For loops: multipanel graphics: beautifuller}
-\vspace{-1em}
-\begin{knitrout}\scriptsize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwd{par}\hlstd{(}\hlkwc{mfrow}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,}\hlnum{2}\hlstd{),} \hlkwc{mar}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{4}\hlstd{,}\hlnum{4}\hlstd{,}\hlnum{2}\hlstd{,}\hlnum{0.1}\hlstd{),} \hlkwc{mgp}\hlstd{=}\hlkwd{c}\hlstd{(}\hlnum{2.5}\hlstd{,}\hlnum{0.7}\hlstd{,}\hlnum{0}\hlstd{),} \hlkwc{cex}\hlstd{=}\hlnum{0.7}\hlstd{,} \hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
-\hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{2}\hlopt{:}\hlnum{3}\hlstd{)}
- \hlstd{\{}
- \hlkwd{plot}\hlstd{(stocks[ stocks}\hlopt{$}\hlstd{Date}\hlopt{>}\hlkwd{as.Date}\hlstd{(}\hlstr{"2016-04-01"}\hlstd{) ,} \hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,i) ],}
-      \hlkwc{main}\hlstd{=}\hlkwd{colnames}\hlstd{(stocks)[i],} \hlkwc{xaxt}\hlstd{=}\hlstr{"n"}\hlstd{,} \hlkwc{type}\hlstd{=}\hlstr{"l"}\hlstd{,} \hlkwc{xlab}\hlstd{=}\hlstr{" "}\hlstd{,}
-      \hlkwc{ylab}\hlstd{=}\hlkwa{if}\hlstd{(i}\hlopt{==}\hlnum{2}\hlstd{)} \hlstr{"Adjusted daily share price  [USD]"} \hlkwa{else} \hlstr{""}\hlstd{)}
- \hlstd{berryFunctions}\hlopt{::}\hlkwd{monthAxis}\hlstd{(}\hlnum{1}\hlstd{)}
- \hlstd{\}}
-\end{alltt}
-\end{kframe}
-
-{\centering \includegraphics[width=\textwidth]{./fig/forpanel2-1} 
-
-}
-
-
-
-\end{knitrout}
-\end{frame}
-
-\iffalse % commenting out lapply section
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-\section{lapply}
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for -> lapply I: basics}
-\vspace{-1em}
+\begin{frame}[fragile]{for -> lapply}
+\textbf{l}apply: apply a function to elements of a list (or vector)\\
+list: R object containing other objects
+\pause \vspace{-1em}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlstd{files} \hlkwb{<-} \hlkwd{dir}\hlstd{(}\hlstr{"../rawdata"}\hlstd{,} \hlkwc{pattern}\hlstd{=}\hlstr{"*.csv"}\hlstd{,} \hlkwc{full}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-
-\hlcom{#}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
-\pause \vspace{-2.7em}
+\pause \vspace{-1em}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
@@ -971,97 +452,31 @@ Because:\vspace{-0.5em}
 \hlstd{ldfs} \hlkwb{<-} \hlkwd{list}\hlstd{()} \hlcom{# initiate empty list}
 \hlkwa{for}\hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlkwd{length}\hlstd{(files))}
    \hlstd{ldfs[[i]]} \hlkwb{<-} \hlkwd{read.csv}\hlstd{(files[i],} \hlkwc{as.is}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-
-\hlcom{#}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
-\pause \vspace{-2.7em}
+\pause \vspace{-1em}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlcom{# much better way: apply function to each file}
 \hlstd{ldfs} \hlkwb{<-} \hlkwd{lapply}\hlstd{(}\hlkwc{X}\hlstd{=files,} \hlkwc{FUN}\hlstd{=read.csv,} \hlkwc{as.is}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-
-\hlcom{#}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
-\pause \vspace{-2.7em}
+\pause \vspace{-1em}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlcom{# single data.frame if all files have n columns:}
-\hlstd{df} \hlkwb{<-} \hlkwd{do.call}\hlstd{(rbind, ldfs)}
-
-\hlcom{#}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause \vspace{-2.7em}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# PS: much faster in this example could be}
-\hlkwd{library}\hlstd{(}\hlstr{"data.table"}\hlstd{)} \hlcom{# fread + rbindlist}
-\hlstd{ldfs} \hlkwb{<-} \hlkwd{lapply}\hlstd{(}\hlkwc{X}\hlstd{=files,} \hlkwc{FUN}\hlstd{=fread,} \hlkwc{sep}\hlstd{=}\hlstr{","}\hlstd{)}
-\hlstd{df} \hlkwb{<-} \hlkwd{rbindlist}\hlstd{(ldfs)}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{for -> lapply II: progress bar, names, indexing etc}
-\vspace{-0.6em}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{ldfs} \hlkwb{<-}   \hlkwd{lapply}\hlstd{(}\hlkwc{X}\hlstd{=files,} \hlkwc{FUN}\hlstd{=read.csv,} \hlkwc{as.is}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-
-\hlcom{#}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause \vspace{-3.48em}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# progress bar with remaining time}
+\hlcom{# progress bar with remaining time (+ parallelized!)}
 \hlkwd{library}\hlstd{(}\hlstr{"pbapply"}\hlstd{)}
 \hlstd{ldfs} \hlkwb{<-} \hlkwd{pblapply}\hlstd{(}\hlkwc{X}\hlstd{=files,} \hlkwc{FUN}\hlstd{=read.csv,} \hlkwc{as.is}\hlstd{=}\hlnum{TRUE}\hlstd{)}
-
-\hlcom{#}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause \vspace{-3.48em}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# nice additional stuff:}
-\hlkwd{names}\hlstd{(ldfs)} \hlkwb{<-} \hlstd{files}
-\hlkwd{str}\hlstd{(ldfs,} \hlkwc{max.level}\hlstd{=}\hlnum{1}\hlstd{)}
-\hlstd{ldfs[[}\hlnum{2}\hlstd{]]} \hlcom{# second list element}
-
-\hlcom{#}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\pause \vspace{-3.58em}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlcom{# get third column / fifth row from each df:}
-\hlkwd{sapply}\hlstd{(ldfs,} \hlstr{"["}\hlstd{,  ,} \hlkwc{j}\hlstd{=}\hlnum{3}\hlstd{)}
-\hlkwd{sapply}\hlstd{(ldfs,} \hlstr{"["}\hlstd{,} \hlnum{5}\hlstd{,    )}
+\hlstd{ldfs} \hlkwb{<-} \hlkwd{pblapply}\hlstd{(}\hlkwc{X}\hlstd{=files,} \hlkwc{FUN}\hlstd{=read.csv,} \hlkwc{as.is}\hlstd{=}\hlnum{TRUE}\hlstd{,} \hlkwc{cl}\hlstd{=}\hlnum{8}\hlstd{)}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
 \end{frame}
 
-\fi % commenting out lapply section
 %------------------------------------------------------------%
 %------------------------------------------------------------%
 \section{Functions}
@@ -1113,11 +528,11 @@ After \rcode{return()}ing, the execution of the function is terminated, so it sh
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{Functions with more arguments}
+\begin{frame}[fragile]{Functions with more arguments + default values}
 \begin{knitrout}\small
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{myfunct} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{,} \hlkwc{type}\hlstd{=}\hlstr{"o"}\hlstd{,} \hlkwc{...}\hlstd{)} \hlkwd{plot}\hlstd{(x,} \hlkwc{type}\hlstd{=type, ...)}
+\hlstd{myfunct} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{x}\hlstd{,} \hlkwc{type}\hlstd{=}\hlstr{"b"}\hlstd{,} \hlkwc{...}\hlstd{)} \hlkwd{plot}\hlstd{(x,} \hlkwc{type}\hlstd{=type, ...)}
 \hlcom{# type="o" is now the default, thus used unless specified}
 \hlcom{# The ellipsis (...) passes arguments to other functions}
 \hlkwd{myfunct}\hlstd{(}  \hlkwd{c}\hlstd{(}\hlnum{5}\hlstd{,}\hlnum{11}\hlstd{,}\hlnum{3}\hlstd{,}\hlnum{7}\hlstd{) ,} \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,} \hlkwc{las}\hlstd{=}\hlnum{1}\hlstd{)}
@@ -1136,45 +551,44 @@ After \rcode{return()}ing, the execution of the function is terminated, so it sh
 
 %------------------------------------------------------------%
 
-\begin{frame}[fragile]{Functions: example I}
-If you needed to find the zeros of quadratic functions very often, you could use
+\begin{frame}[fragile]{Conditional execution}
+Syntax:
+\rcode{\alert{if}(this\_is\_true) \{do\_something\}}\\
+\pause
+\rcode{\alert{if}(this\_is\_true) \{do\_something\} \alert{else} \{do\_other\_thing\}}\\[0.8em]
+\pause
+If condition == TRUE, then expression1 is evaluated,\\
+if condition == FALSE, then expression2 is evaluated.\\[0.8em]
+\pause
+\begin{columns}
+\begin{column}{.40\textwidth}
+\texttt{7-3 > 2 \\
+\textcolor{blue}{class}(7-3 > 2 ) \\
+\textcolor{red}{if}(7-3 > 2) 18  \\
+\textcolor{red}{if}(7-3 > 5) 18  \\
+\textcolor{red}{if}(7-3 > 5) 18 \textcolor{red}{else} 17 }
+\end{column}
+\begin{column}{.59\textwidth}
+\pause TRUE\\
+\pause logical = truth value, boolean\\
+\pause Condition is TRUE, so 18 is returned\\
+\pause Condition is FALSE, so nothing happens\\
+\pause Condition FALSE, so 17 is returned.
+\end{column}
+\end{columns}
+\pause \vspace{0.8em}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
-\hlstd{pq} \hlkwb{<-} \hlkwa{function}\hlstd{(}\hlkwc{p}\hlstd{,}\hlkwc{q}\hlstd{)} \hlcom{# y = x^2 + px + q}
-              \hlstd{\{}
-              \hlstd{w} \hlkwb{<-} \hlkwd{sqrt}\hlstd{( p}\hlopt{^}\hlnum{2} \hlopt{/} \hlnum{4} \hlopt{-} \hlstd{q )}
-              \hlkwd{c}\hlstd{(}\hlopt{-}\hlstd{p}\hlopt{/}\hlnum{2}\hlopt{-}\hlstd{w,} \hlopt{-}\hlstd{p}\hlopt{/}\hlnum{2}\hlopt{+}\hlstd{w)}
-              \hlstd{\}} \hlcom{# End of function}
-
-\hlkwd{pq}\hlstd{(}\hlnum{3}\hlstd{,} \hlopt{-}\hlnum{12}\hlstd{)}
-\end{alltt}
-\begin{verbatim}
-## [1] -5.274917  2.274917
-\end{verbatim}
-\end{kframe}
-\end{knitrout}
-\end{frame}
-
-%------------------------------------------------------------%
-
-\begin{frame}[fragile]{Functions: example II}
-\begin{knitrout}
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlstd{x} \hlkwb{<-} \hlkwd{seq}\hlstd{(}\hlopt{-}\hlnum{10}\hlstd{,} \hlnum{10}\hlstd{,} \hlkwc{len}\hlstd{=}\hlnum{100}\hlstd{)}
-\hlkwd{plot}\hlstd{(x,  x}\hlopt{^}\hlnum{2} \hlopt{+}\hlnum{3}\hlopt{*}\hlstd{x} \hlopt{-}\hlnum{12}\hlstd{,} \hlkwc{type}\hlstd{=}\hlstr{"l"}\hlstd{,} \hlkwc{col}\hlstd{=}\hlnum{2}\hlstd{)}
-\hlkwd{abline}\hlstd{(}\hlkwc{h}\hlstd{=}\hlnum{0}\hlstd{,} \hlkwc{v}\hlstd{=}\hlnum{0}\hlstd{)}
+\hlkwa{if}\hlstd{(}\hlkwd{length}\hlstd{(input)}\hlopt{>}\hlnum{1}\hlstd{)}
+  \hlkwd{stop}\hlstd{(}\hlstr{"length must be 1, not "}\hlstd{,} \hlkwd{length}\hlstd{(input))}
 \end{alltt}
 \end{kframe}
-
-{\centering \includegraphics[width=\textwidth]{./fig/pqfunplot-1} 
-
-}
-
-
-
 \end{knitrout}
+\pause \vspace{-0.3em}
+\rcode{stop}: Interrupts function execution and gives error\\
+\rcode{warning}: continues but gives warning\\
+\rcode{message}: to inform instead of worry the user\\[1em]
 \end{frame}
 
 %------------------------------------------------------------%
@@ -1184,7 +598,8 @@ If you needed to find the zeros of quadratic functions very often, you could use
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{plot}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{10}\hlstd{,} \hlkwc{asp}\hlstd{=}\hlnum{1}\hlstd{)} \hlcom{# aspect ratio y/x of graph range}
-\hlkwd{grid}\hlstd{(}\hlkwc{col}\hlstd{=}\hlnum{1}\hlstd{)} \hlcom{# the next part sould go into a function:}
+\hlkwd{grid}\hlstd{(}\hlkwc{col}\hlstd{=}\hlnum{1}\hlstd{)}
+\hlcom{# the next part sould go into a function:}
 \hlstd{x} \hlkwb{<-} \hlnum{8} \hlstd{;  y} \hlkwb{<-} \hlnum{6} \hlstd{;  r} \hlkwb{<-}\hlnum{2}
 \hlstd{p} \hlkwb{<-} \hlkwd{seq}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{2}\hlopt{*}\hlstd{pi,} \hlkwc{len}\hlstd{=}\hlnum{50}\hlstd{)}
 \hlstd{cx} \hlkwb{<-} \hlstd{x}\hlopt{+}\hlstd{r}\hlopt{*}\hlkwd{cos}\hlstd{(p) ;  cy} \hlkwb{<-} \hlstd{y}\hlopt{+}\hlstd{r}\hlopt{*}\hlkwd{sin}\hlstd{(p)}
@@ -1208,12 +623,13 @@ If you needed to find the zeros of quadratic functions very often, you could use
 Write a function that
 \begin{enumerate}
   \item - draws a circle with a certain radius at user-specified locations of an existing plot (see last slide).
-  \item - uses ellipsis to allow the user to customize the appearance
+  \item - uses ellipsis (\rcode{...}) to allow the user to customize the appearance
   \item - checks all the arguments and gives useful warnings if the wrong type of input is provided
   \item - has useful explanations for each argument (documentation)
   \item - has readable indentation, spacing and comments explaining the code
   \item Now let your neighbor use it without explaining how it is to be used (this should be inferred from the code and comments!)
   \item Use your neighbor's function with a vector to draw several circles at once. (unintended use?) What happens?
+  \item BONUS: Learn writing packages at \datalinkText{packdev.R}
 \end{enumerate}
 \end{exercise}
 \end{frame}
@@ -1225,33 +641,60 @@ Write a function that
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlcom{# Small helper function drawing circles into existing graphics}
-\hlcom{# Berry Boessenkool, berry-b@gmx.de, 2012}
-\hlstd{circle} \hlkwb{<-} \hlkwa{function}\hlstd{(}
-  \hlkwc{x}\hlstd{,} \hlcom{# x-coordinate of points, numeric value of length 1}
-  \hlkwc{y}\hlstd{,} \hlcom{# ditto for y}
-  \hlkwc{r}\hlstd{,} \hlcom{# radius of the circle, in the graphic's units}
-  \hlkwc{locnum}\hlstd{=}\hlnum{100}\hlstd{,} \hlcom{# number of points on circle (more means smoother but slower)}
-  \hlkwc{...}\hlstd{)} \hlcom{# Further Arguments passed to polygon, like col, border, lwd}
- \hlstd{\{}
+circle <- \hlkwd{function}(
+  x, \hlcom{# x-coordinate of points, numeric value of length 1}
+  y, \hlcom{# ditto for y}
+  r, \hlcom{# radius of the circle, in the graphic's units}
+  locnum=100, \hlcom{# number of points on \hlkwd{circle} (more means smoother but slower)}
+  ...) \hlcom{# Further Arguments passed to polygon, like col, border, lwd}
+ \{
+  
+\hlcom{ #}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\pause \vspace{-2.5em}
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
+\begin{alltt}
  \hlcom{# input checking - only one circle can be drawn:}
  \hlkwa{if}\hlstd{(}\hlkwd{length}\hlstd{(x)} \hlopt{>}\hlnum{1} \hlopt{|} \hlkwd{length}\hlstd{(y)} \hlopt{>}\hlnum{1} \hlopt{|} \hlkwd{length}\hlstd{(r)} \hlopt{>}\hlnum{1} \hlopt{|} \hlkwd{length}\hlstd{(locnum)} \hlopt{>}\hlnum{1}\hlstd{)}
    \hlstd{\{}
    \hlkwd{warning}\hlstd{(}\hlstr{"Only the first element of the vectors is used."}\hlstd{)}
    \hlstd{x} \hlkwb{<-} \hlstd{x[}\hlnum{1}\hlstd{]; y} \hlkwb{<-} \hlstd{y[}\hlnum{1}\hlstd{]; r} \hlkwb{<-} \hlstd{r[}\hlnum{1}\hlstd{]; locnum} \hlkwb{<-} \hlstd{locnum[}\hlnum{1}\hlstd{]}
    \hlstd{\}}
- \hlcom{# input checking - is every value numeric?}
+
+ \hlcom{#}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\pause \vspace{-2.5em}
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
+\begin{alltt}
  \hlkwa{if}\hlstd{(}\hlopt{!}\hlkwd{is.numeric}\hlstd{(x))} \hlkwd{stop}\hlstd{(}\hlstr{"x must be numeric, not "}\hlstd{,} \hlkwd{class}\hlstd{(x))}
  \hlkwa{if}\hlstd{(}\hlopt{!}\hlkwd{is.numeric}\hlstd{(y))} \hlkwd{stop}\hlstd{(}\hlstr{"y must be numeric, not "}\hlstd{,} \hlkwd{class}\hlstd{(y))}
  \hlkwa{if}\hlstd{(}\hlopt{!}\hlkwd{is.numeric}\hlstd{(r))} \hlkwd{stop}\hlstd{(}\hlstr{"r must be numeric, not "}\hlstd{,} \hlkwd{class}\hlstd{(r))}
- \hlcom{# prepare circle line coordinates:}
- \hlstd{cx} \hlkwb{<-} \hlstd{x}\hlopt{+}\hlstd{r}\hlopt{*}\hlkwd{cos}\hlstd{(} \hlkwd{seq}\hlstd{(}\hlnum{0}\hlstd{,}\hlnum{2}\hlopt{*}\hlstd{pi,}\hlkwc{len}\hlstd{=locnum) )}
- \hlstd{cy} \hlkwb{<-} \hlstd{y}\hlopt{+}\hlstd{r}\hlopt{*}\hlkwd{sin}\hlstd{(} \hlkwd{seq}\hlstd{(}\hlnum{0}\hlstd{,}\hlnum{2}\hlopt{*}\hlstd{pi,}\hlkwc{len}\hlstd{=locnum) )}
- \hlkwd{polygon}\hlstd{(cx, cy, ...)} \hlcom{# actually draw it}
- \hlstd{\}}
+
+ \hlcom{#}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\pause \vspace{-2.5em}
+\begin{knitrout}\scriptsize
+\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{ # prepare circle line coordinates:}
+ cx <- x+r*\hlkwd{cos}( \hlkwd{seq}(0,2*pi,len=locnum) )
+ cy <- y+r*\hlkwd{sin}( \hlkwd{seq}(0,2*pi,len=locnum) )
+ \hlkwd{polygon}(cx, cy, ...) \hlcom{# actually draw it}
+ \}
 \hlcom{# Note: if circles look like ellipsis, use plot(... asp=1)}
 \end{alltt}
 \end{kframe}
 \end{knitrout}
+
+
 \end{frame}
 
 %------------------------------------------------------------%
@@ -1292,7 +735,7 @@ Write a function that
 \end{alltt}
 \end{kframe}
 
-{\centering \includegraphics[width=0.65\textwidth]{./fig/exfunsolc-1} 
+{\centering \includegraphics[width=0.4\textwidth]{./fig/exfunsolc-1} 
 
 }
 
@@ -1301,29 +744,7 @@ Write a function that
 \end{knitrout}
 \end{frame}
 
-\iffalse % commenting out R packages section
-%------------------------------------------------------------%
-
-\section{Writing R packages}
-
-%------------------------------------------------------------%
-
-\begin{frame}{Why you should write R packages}
-\pause
-\begin{itemize}[<+->]
-\item Collect your own functions in one place
-\item Combine functions and documentation in the right way
-\item Share code with others
-\item Make your research reproducible !
-\end{itemize}
-\onslide<+->
-\vspace{1em}
-Good introduction at \datalinkText{packdev.R}
-\end{frame}
-
-\fi % commenting out R packages section
-%------------------------------------------------------------%
-
+% ---------------------------
 
 \section{Debugging}
 
@@ -1343,18 +764,12 @@ You have just debugged a function.
 
 \item You want to step into the function you are developing at a specific point.
 You add \rcode{browser()} at that point of the code.
-You want to go line by line in one specific function. You set \rcode{debug(thatFunction)}.
-
-\item You want to learn about lexical scoping (Where does R find variables?).\\
-\small
-\href{http://trestletech.com/2013/04/package-wide-variablescache-in-r-package/}{http://trestletech.com/2013/04/package-wide-variablescache-in-r-package/}
-\href{http://adv-r.had.co.nz/Environments.html}{http://adv-r.had.co.nz/Environments.html}
 \end{itemize}
 \end{frame}
 
 % ---------------------------
 
-\begin{frame}[fragile]{Debugging: useful functions}
+\begin{frame}[fragile]{Debugging: useful functions + Resources}
 \begin{tabular}{ll}
 \pause source("projectFuns.R") & execute complete file\\
 \pause traceback() & find error source in sequence of function calls\\
@@ -1364,21 +779,8 @@ You want to go line by line in one specific function. You set \rcode{debug(thatF
 \pause debug(funct) & toggle linewise function execution\\
 \pause undebug(funct) & after calling and fixing funct\\
 \end{tabular}\\
-\pause
-\vspace{-0.5em}
-\begin{knitrout}\footnotesize
-\definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
-\begin{alltt}
-\hlkwa{if}\hlstd{(}\hlkwd{length}\hlstd{(input)}\hlopt{>}\hlnum{1}\hlstd{)} \hlkwd{stop}\hlstd{(}\hlstr{"length must be 1, not "}\hlstd{,} \hlkwd{length}\hlstd{(input))}
-\end{alltt}
-\end{kframe}
-\end{knitrout}
-\vspace{-1em}
-\pause
-\rcode{stop}: Interrupts function execution and gives error\\
-\rcode{warning}: continues but gives warning\\
-\rcode{message}: to inform instead of worry the user\\[1em]
-\pause
+
+\pause \vspace{1em}
 \href{http://www.biostat.jhsph.edu/~rpeng/docs/R-debug-tools.pdf}{R. Peng (2002): Interactive Debugging Tools in R}\\
 \href{https://www.stats.umanitoba.ca/files/statsweb/2011/03/debugging.pdf}{D. Murdoch (2010): Debugging in R}\\
 \href{http://adv-r.had.co.nz/Exceptions-Debugging.html}{H. Wickham (2015): Advanced R: debugging}\\
@@ -1414,24 +816,9 @@ Example: \href{https://www.r-bloggers.com/tracking-down-errors-in-r/}{Pete Werne
 \begin{itemize}
 \item \rcode{stupid error you can easily remove} - traceback - find location of error - lsc\#73 - just comment it out
 \item \rcode{harder to find but still stupid} - traceback - nse\#11 - ditto
-\item \rcode{Error in plot: need finite 'ylim' value} - debug/browser/options(error=recover) - lsc\#105 - NAs in Q - range(Q, na.rm=TRUE) - also in other applicable locations
+\item \rcode{Error in plot: need finite 'ylim' value} - browser/options(error=recover) - lsc\#105 - NAs in Q - range(Q, na.rm=TRUE) - also in other applicable locations
 \item \rcode{There were 50 or more warnings} - come from rmse being called in optimization - add argument quietNA (or similar) to lsc that is passed to rmse in lsc\#79
 \end{itemize}
-\end{frame}
-
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-\section{Feedback}
-%------------------------------------------------------------%
-%------------------------------------------------------------%
-
-\begin{frame}{Feedback}
-\center{
-Please fill out the feedback form at\\[1em]
-\href{https://bit.ly/feedbackR}{bit.ly/feedbackR}\\[1em]
-(it only takes a few minutes and helps to improve the course)\\[1em]
-Thanks!\\[1em]
-}
 \end{frame}
 
 %------------------------------------------------------------%
