@@ -1,184 +1,184 @@
-Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-18 11:07:19
+Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-22 11:03:39
 
 
 processing file: LoopFun.Rnw
-  |                                                                         |                                                                 |   0%  |                                                                         |.                                                                |   2%
+  |                                                |                                        |   0%  |                                                |.                                       |   2%
   ordinary text without R code
 
-  |                                                                         |..                                                               |   3%
+  |                                                |.                                       |   3%
 label: setup (with options) 
 List of 1
  $ include: logi FALSE
 
-  |                                                                         |...                                                              |   5%
+  |                                                |..                                      |   5%
   ordinary text without R code
 
-  |                                                                         |....                                                             |   7%
+  |                                                |...                                     |   7%
 label: slidebg (with options) 
 List of 3
  $ echo      : symbol F
  $ fig.show  : chr "hide"
  $ fig.height: num 4.5
 
-  |                                                                         |.....                                                            |   8%
+  |                                                |...                                     |   8%
   ordinary text without R code
 
-  |                                                                         |......                                                           |  10%
+  |                                                |....                                    |  10%
 label: for1 (with options) 
 List of 2
  $ echo: symbol T
  $ eval: symbol F
 
-  |                                                                         |........                                                         |  12%
+  |                                                |.....                                   |  12%
   ordinary text without R code
 
-  |                                                                         |.........                                                        |  13%
+  |                                                |.....                                   |  13%
 label: for_print (with options) 
 List of 1
  $ eval: symbol F
 
-  |                                                                         |..........                                                       |  15%
+  |                                                |......                                  |  15%
   ordinary text without R code
 
-  |                                                                         |...........                                                      |  17%
+  |                                                |.......                                 |  17%
 label: for2 (with options) 
 List of 3
  $ echo: symbol T
  $ eval: logi TRUE
  $ tidy: logi FALSE
 
-  |                                                                         |............                                                     |  18%
+  |                                                |.......                                 |  18%
   ordinary text without R code
 
-  |                                                                         |.............                                                    |  20%
+  |                                                |........                                |  20%
 label: for6
-  |                                                                         |..............                                                   |  22%
+  |                                                |.........                               |  22%
   ordinary text without R code
 
-  |                                                                         |...............                                                  |  23%
+  |                                                |.........                               |  23%
 label: for6b
-  |                                                                         |................                                                 |  25%
+  |                                                |..........                              |  25%
   ordinary text without R code
 
-  |                                                                         |.................                                                |  27%
+  |                                                |...........                             |  27%
 label: for6b2 (with options) 
 List of 1
  $ echo: num 2
 
-  |                                                                         |..................                                               |  28%
+  |                                                |...........                             |  28%
   ordinary text without R code
 
-  |                                                                         |....................                                             |  30%
+  |                                                |............                            |  30%
 label: for3a (with options) 
 List of 2
  $ echo: symbol F
  $ size: chr "footnotesize"
 
-  |                                                                         |.....................                                            |  32%
+  |                                                |.............                           |  32%
   ordinary text without R code
 
-  |                                                                         |......................                                           |  33%
+  |                                                |.............                           |  33%
 label: for3 (with options) 
 List of 2
  $ echo: language -1
  $ size: chr "footnotesize"
 
-  |                                                                         |.......................                                          |  35%
+  |                                                |..............                          |  35%
   ordinary text without R code
 
-  |                                                                         |........................                                         |  37%
+  |                                                |...............                         |  37%
 label: for5 (with options) 
 List of 2
  $ echo: language -1
  $ size: chr "footnotesize"
 
-  |                                                                         |.........................                                        |  38%
+  |                                                |...............                         |  38%
   ordinary text without R code
 
-  |                                                                         |..........................                                       |  40%
+  |                                                |................                        |  40%
 label: stocks_datapreparation (with options) 
 List of 2
  $ eval: symbol F
  $ echo: logi FALSE
 
-  |                                                                         |...........................                                      |  42%
+  |                                                |.................                       |  42%
   ordinary text without R code
 
-  |                                                                         |............................                                     |  43%
+  |                                                |.................                       |  43%
 label: forpanel (with options) 
 List of 3
  $ size      : chr "footnotesize"
  $ fig.height: num 2.8
  $ echo      : language -3
 
-  |                                                                         |.............................                                    |  45%
+  |                                                |..................                      |  45%
   ordinary text without R code
 
-  |                                                                         |..............................                                   |  47%
+  |                                                |...................                     |  47%
 label: for_lapply1 (with options) 
 List of 1
  $ eval: logi FALSE
 
-  |                                                                         |...............................                                  |  48%
+  |                                                |...................                     |  48%
   ordinary text without R code
 
-  |                                                                         |................................                                 |  50%
+  |                                                |....................                    |  50%
 label: for_lapply2 (with options) 
 List of 1
  $ eval: logi FALSE
 
-  |                                                                         |..................................                               |  52%
+  |                                                |.....................                   |  52%
   ordinary text without R code
 
-  |                                                                         |...................................                              |  53%
+  |                                                |.....................                   |  53%
 label: for_lapply3 (with options) 
 List of 1
  $ eval: logi FALSE
 
-  |                                                                         |....................................                             |  55%
+  |                                                |......................                  |  55%
   ordinary text without R code
 
-  |                                                                         |.....................................                            |  57%
+  |                                                |.......................                 |  57%
 label: for_lapply7 (with options) 
 List of 1
  $ eval: logi FALSE
 
-  |                                                                         |......................................                           |  58%
+  |                                                |.......................                 |  58%
   ordinary text without R code
 
-  |                                                                         |.......................................                          |  60%
+  |                                                |........................                |  60%
 label: funct2 (with options) 
 List of 3
  $ echo: symbol T
  $ eval: symbol T
  $ tidy: logi FALSE
 
-  |                                                                         |........................................                         |  62%
+  |                                                |.........................               |  62%
   ordinary text without R code
 
-  |                                                                         |.........................................                        |  63%
+  |                                                |.........................               |  63%
 label: funct3
-  |                                                                         |..........................................                       |  65%
+  |                                                |..........................              |  65%
   ordinary text without R code
 
-  |                                                                         |...........................................                      |  67%
+  |                                                |...........................             |  67%
 label: funct4 (with options) 
 List of 2
  $ size: chr "small"
  $ echo: language -1
 
-  |                                                                         |............................................                     |  68%
+  |                                                |...........................             |  68%
   ordinary text without R code
 
-  |                                                                         |..............................................                   |  70%
+  |                                                |............................            |  70%
 label: stopfun (with options) 
 List of 1
  $ eval: symbol F
 
-  |                                                                         |...............................................                  |  72%
+  |                                                |.............................           |  72%
   ordinary text without R code
 
-  |                                                                         |................................................                 |  73%
+  |                                                |.............................           |  73%
 label: circlebasics (with options) 
 List of 4
  $ echo      : language -1
@@ -186,93 +186,108 @@ List of 4
  $ fig.width : num 2.5
  $ out.width : chr "0.4\\textwidth"
 
-  |                                                                         |.................................................                |  75%
+  |                                                |..............................          |  75%
   ordinary text without R code
 
-  |                                                                         |..................................................               |  77%
+  |                                                |...............................         |  77%
 label: exfunsola_1 (with options) 
 List of 2
  $ size: chr "scriptsize"
  $ eval: logi FALSE
 
-Error in parse(text = code, keep.source = FALSE) : 
-  <text>:11:0: unexpected end of input
-9:   
-10:  #
-   ^
-  |                                                                         |...................................................              |  78%
+  |                                                |...............................         |  78%
   ordinary text without R code
 
-  |                                                                         |....................................................             |  80%
+  |                                                |................................        |  80%
 label: exfunsola_2 (with options) 
 List of 2
  $ size: chr "scriptsize"
  $ eval: logi FALSE
 
-  |                                                                         |.....................................................            |  82%
+  |                                                |.................................       |  82%
   ordinary text without R code
 
-  |                                                                         |......................................................           |  83%
+  |                                                |.................................       |  83%
 label: exfunsola_3 (with options) 
 List of 2
  $ size: chr "scriptsize"
  $ eval: logi FALSE
 
-  |                                                                         |.......................................................          |  85%
+  |                                                |..................................      |  85%
   ordinary text without R code
 
-  |                                                                         |........................................................         |  87%
+  |                                                |...................................     |  87%
 label: exfunsola_4 (with options) 
 List of 2
  $ size: chr "scriptsize"
  $ eval: logi FALSE
 
-  |                                                                         |.........................................................        |  88%
+  |                                                |...................................     |  88%
 label: circlesdef (with options) 
 List of 1
  $ echo: logi FALSE
 
-  |                                                                         |..........................................................       |  90%
+  |                                                |....................................    |  90%
   ordinary text without R code
 
-  |                                                                         |............................................................     |  92%
+  |                                                |.....................................   |  92%
 label: exfunsolb (with options) 
 List of 1
  $ echo: language -1
 
-  |                                                                         |.............................................................    |  93%
+  |                                                |.....................................   |  93%
   ordinary text without R code
 
-  |                                                                         |..............................................................   |  95%
+  |                                                |......................................  |  95%
 label: exfunsolc (with options) 
 List of 3
  $ echo     : language -1
  $ size     : chr "scriptsize"
  $ out.width: chr "0.4\\textwidth"
 
-  |                                                                         |...............................................................  |  97%
+  |                                                |....................................... |  97%
   ordinary text without R code
 
-  |                                                                         |................................................................ |  98%
+  |                                                |....................................... |  98%
 label: PQ_lsc (with options) 
 List of 3
  $ echo      : symbol F
  $ warning   : symbol F
  $ fig.height: num 2.8
 
-  |                                                                         |.................................................................| 100%
+  |                                                |........................................| 100%
   ordinary text without R code
 
 
 output file: LoopFun.tex
 
 -------
-Finished knitr::knit 2019-11-18 11:07:20, after 0.47 secs
-Finished tools::texi2pdf 2019-11-18 11:07:44, after 25 secs 
+Finished knitr::knit 2019-11-22 11:03:40, after 1 secs
+
+---------------
+2019-11-22 11:03:47
+
+warning: in system(paste(shQuote(texi2dvi), if (quiet) "--quiet" else "", : running command '"C:\Users\jbreier\AppData\Local\Programs\MIKTEX~1.9\miktex\bin\x64\texify.exe" --quiet --pdf "LoopFun.tex" --max-iterations=20 -I "e:/Program Files/R/R-3.6.1/share/texmf/tex/latex" -I "e:/Program Files/R/R-3.6.1/share/texmf/bibtex/bst"' had status 1
+-- tryStack sys.calls: parallel:::.slaveRSOCK -> slaveLoop -> do.call - msg$data$fun ->  -> FUN -> berryFunctions::tryStack -> tools::texi2pdf -> texi2dvi -> system -> system(paste(shQuote(texi2dvi), if (quiet) "--quiet" else "", 
+
+---------------
+2019-11-22 11:03:47
+
+error: in NULL: running 'texi2dvi' on 'LoopFun.tex' failed
+
+LaTeX errors:
+themedefault.sty:16:  ==> Fatal error occurred, no output PDF file produced!
+-- tryStack sys.calls: parallel:::.slaveRSOCK -> slaveLoop -> do.call - msg$data$fun ->  -> FUN -> berryFunctions::tryStack -> tools::texi2pdf -> texi2dvi -> stop -> NULL
+Finished tools::texi2pdf 2019-11-22 11:04:08, after 28 secs 
 -------
-Messages in 'LoopFun.log' at 'C:/Dropbox/R/loopfun':
+Messages in 'LoopFun.log' at 'F:/jbreier/Projects/loopfun':
 ---
-No errors found in 'LoopFun.log', but to be sure,
-open the corresponding tex file in TexMaker and click on 'View log'.
+themedefault.sty:16:  ==> Fatal error occurred, no output PDF file produced!
+NA
+NA
+NA
 ---
-Total time  25 secs
+There may be more messages in 'LoopFun.log'.
+To check, open the corresponding tex file in TexMaker and click on 'View log'.
+---
+Total time  29 secs
