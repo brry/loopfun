@@ -353,9 +353,9 @@ write.table(stocks, file="data/stocks.txt", row.names=F, quote=F)
 \begin{frame}[fragile]{For loops exercise}
 \begin{exercise}{for loop}
 \begin{enumerate}
-\item Read \datalinkText{stocks.txt}, so that there are no factors in the data.frame
-\item Change the first column type from \texttt{char} to \texttt{date} with \rcode{?as.Date}
-\item What do you get with \rcode{plot(stocks[ ,c(1,2)])}? Make it a line graph by setting the argument \texttt{type}.
+\item Read \datalinkText{stocks.txt}, so that there are no factors in the data.frame. Use the command \rcode{read.table} and set the arguments \texttt{file}, \texttt{header} and \texttt{stringsAsFactors}
+\item Change the first column type from \texttt{char} to \texttt{date} with \rcode{as.Date(yourDF\$Date)}
+\item What do you get with \rcode{plot(yourDF[ ,c(1,2)])}? Make it a line graph by setting the argument \texttt{type}.
 \item With a \rcode{for} loop, plot each stock time series, i.e. plot the \textit{i}th column over the first column.
 \item BONUS 1: Use good annotations (\texttt{main, ylab, xlab})
 \item BONUS 2: Turn y axis labels upright (\texttt{las})
