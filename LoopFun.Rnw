@@ -444,7 +444,7 @@ myfunct(   c(5,11,3,7)  )
 <<funct4, size="small", echo=-1>>=
 par(mar=c(4,5,1,1), mgp=c(2.8,0.8,0))
 myfunct <- function(x, type="b", ...) plot(x, type=type, ...)
-# type="o" is now the default, thus used unless specified
+# type="b" is now the default, thus used unless specified
 # The ellipsis (...) passes arguments to other functions
 myfunct(  c(5,11,3,7) , col="red", las=1)
 @
