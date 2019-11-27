@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.17)  27 NOV 2019 11:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.3.17)  27 NOV 2019 14:16
 entering extended mode
 **C:/Dropbox/R/loopfun/LoopFun.tex
 (C:/Dropbox/R/loopfun/LoopFun.tex
@@ -1571,11 +1571,11 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <8> not available
 \openout4 = `LoopFun.vrb'.
 
 (LoopFun.vrb
-<./fig/exfunsolb-1.pdf, id=366, 433.62pt x 216.81pt>
+<./fig/exfunsolb-1.pdf, id=366, 433.62pt x 201.75375pt>
 File: ./fig/exfunsolb-1.pdf Graphic file (type pdf)
 <use ./fig/exfunsolb-1.pdf>
-Package pdftex.def Info: ./fig/exfunsolb-1.pdf  used on input line 11.
-(pdftex.def)             Requested size: 347.12355pt x 173.57063pt.
+Package pdftex.def Info: ./fig/exfunsolb-1.pdf  used on input line 13.
+(pdftex.def)             Requested size: 347.12355pt x 161.51712pt.
 ) [21
 
  <./fig/exfunsolb-1.pdf>]
@@ -1627,11 +1627,11 @@ Package pdftex.def Info: ./fig/PQ_lsc-1.pdf  used on input line 13.
 \tf@snm=\write8
 \openout8 = `LoopFun.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 826.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 826.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 828.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 828.
 (LoopFun.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 826.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 826.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 828.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 828.
 Package rerunfilecheck Info: File `LoopFun.out' has not changed.
 (rerunfilecheck)             Checksum: 48AF5C0CB4EB75A037F6311F5CCD67E1;135.
  ) 
@@ -1665,7 +1665,7 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt8.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/lm/lmtt9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmtti10.pfb><C:/Users/Berry/AppData/Roaming/MiKTeX/2.9/fonts/type1/public
 /wasy/wasy10.pfb>
-Output written on LoopFun.pdf (27 pages, 801523 bytes).
+Output written on LoopFun.pdf (27 pages, 801576 bytes).
 PDF statistics:
  557 PDF objects out of 1000 (max. 8388607)
  60 named destinations out of 1000 (max. 500000)

@@ -264,8 +264,8 @@ plot(x, 12.5*10/factorial(10-1)*(x/8*10)^(10-1)*exp(-x/8*10),
 par(mar=c(3,3,1,1), mgp=c(2,0.8,0), las=1)
 x <- seq(0,25,0.1)
 plot(x,x, type="n", ylab="y = f(x,n)")
-lines(x, 12.5*5/factorial(5-1)*(x/8*5)^(5-1)*exp(-x/8*5), col=2)
-lines(x, 12.5*6/factorial(6-1)*(x/8*6)^(6-1)*exp(-x/8*6), col=2)
+lines(x, 12.5*5/factorial(5-1)*(x/8*5)^(5-1)*exp(-x/8*5), col="red")
+lines(x, 12.5*6/factorial(6-1)*(x/8*6)^(6-1)*exp(-x/8*6), col="red")
 @
 \only<2>{
 \begin{textblock*}{0.2cm}(2.6cm,2.2cm)
@@ -495,7 +495,7 @@ if(length(input)>1)
 <<circlebasics, echo=-1, fig.height=2.1, fig.width=2.5, out.width="0.4\\textwidth">>=
 par(mar=c(2,2,1,1), las=1)
 plot(1:10, asp=1) # aspect ratio y/x of graph range
-grid(col=1) 
+grid(col="gray") 
 # the next part sould go into a function:
 x <- 8 ;  y <- 6 ;  r <-2
 p <- seq(0, 2*pi, len=50)
@@ -594,11 +594,13 @@ polygon(cx, cy, ...) # actually draw it
 %------------------------------------------------------------%
 
 \begin{frame}[fragile]{Solution for exercise \arabic{exercisecount} II: functions}
-<<exfunsolb, echo=-1>>=
+\vspace{-1em}
+<<exfunsolb, echo=-1, fig.height=2.8>>=
 par(mar=c(3,3,0,0), las=1)
 plot(1:20, type="n", asp=1, cex=2)
 circle(5,5, r=3)
-circle(15,10, r=4, locnum=12, col=2, border=4, lwd=3)
+circle(15,10, r=4, locnum=12, 
+       col="red", border="blue", lwd=3)
 @
 \end{frame}
 

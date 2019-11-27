@@ -309,8 +309,8 @@ In R, \rcode{for} loops are slow. Always try to vectorize (the best option, not 
 \begin{alltt}
 \hlstd{x} \hlkwb{<-} \hlkwd{seq}\hlstd{(}\hlnum{0}\hlstd{,}\hlnum{25}\hlstd{,}\hlnum{0.1}\hlstd{)}
 \hlkwd{plot}\hlstd{(x,x,} \hlkwc{type}\hlstd{=}\hlstr{"n"}\hlstd{,} \hlkwc{ylab}\hlstd{=}\hlstr{"y = f(x,n)"}\hlstd{)}
-\hlkwd{lines}\hlstd{(x,} \hlnum{12.5}\hlopt{*}\hlnum{5}\hlopt{/}\hlkwd{factorial}\hlstd{(}\hlnum{5}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlstd{(x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{5}\hlstd{)}\hlopt{^}\hlstd{(}\hlnum{5}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlkwd{exp}\hlstd{(}\hlopt{-}\hlstd{x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{5}\hlstd{),} \hlkwc{col}\hlstd{=}\hlnum{2}\hlstd{)}
-\hlkwd{lines}\hlstd{(x,} \hlnum{12.5}\hlopt{*}\hlnum{6}\hlopt{/}\hlkwd{factorial}\hlstd{(}\hlnum{6}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlstd{(x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{6}\hlstd{)}\hlopt{^}\hlstd{(}\hlnum{6}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlkwd{exp}\hlstd{(}\hlopt{-}\hlstd{x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{6}\hlstd{),} \hlkwc{col}\hlstd{=}\hlnum{2}\hlstd{)}
+\hlkwd{lines}\hlstd{(x,} \hlnum{12.5}\hlopt{*}\hlnum{5}\hlopt{/}\hlkwd{factorial}\hlstd{(}\hlnum{5}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlstd{(x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{5}\hlstd{)}\hlopt{^}\hlstd{(}\hlnum{5}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlkwd{exp}\hlstd{(}\hlopt{-}\hlstd{x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{5}\hlstd{),} \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{)}
+\hlkwd{lines}\hlstd{(x,} \hlnum{12.5}\hlopt{*}\hlnum{6}\hlopt{/}\hlkwd{factorial}\hlstd{(}\hlnum{6}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlstd{(x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{6}\hlstd{)}\hlopt{^}\hlstd{(}\hlnum{6}\hlopt{-}\hlnum{1}\hlstd{)}\hlopt{*}\hlkwd{exp}\hlstd{(}\hlopt{-}\hlstd{x}\hlopt{/}\hlnum{8}\hlopt{*}\hlnum{6}\hlstd{),} \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{)}
 \end{alltt}
 \end{kframe}
 
@@ -598,7 +598,7 @@ if condition == FALSE, then expression2 is evaluated.\\[0.8em]
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{plot}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{10}\hlstd{,} \hlkwc{asp}\hlstd{=}\hlnum{1}\hlstd{)} \hlcom{# aspect ratio y/x of graph range}
-\hlkwd{grid}\hlstd{(}\hlkwc{col}\hlstd{=}\hlnum{1}\hlstd{)}
+\hlkwd{grid}\hlstd{(}\hlkwc{col}\hlstd{=}\hlstr{"gray"}\hlstd{)}
 \hlcom{# the next part sould go into a function:}
 \hlstd{x} \hlkwb{<-} \hlnum{8} \hlstd{;  y} \hlkwb{<-} \hlnum{6} \hlstd{;  r} \hlkwb{<-}\hlnum{2}
 \hlstd{p} \hlkwb{<-} \hlkwd{seq}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{2}\hlopt{*}\hlstd{pi,} \hlkwc{len}\hlstd{=}\hlnum{50}\hlstd{)}
@@ -700,12 +700,14 @@ circle <- \hlkwd{function}(
 %------------------------------------------------------------%
 
 \begin{frame}[fragile]{Solution for exercise \arabic{exercisecount} II: functions}
+\vspace{-1em}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.961, 0.961, 0.961}\color{fgcolor}\begin{kframe}
 \begin{alltt}
 \hlkwd{plot}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{20}\hlstd{,} \hlkwc{type}\hlstd{=}\hlstr{"n"}\hlstd{,} \hlkwc{asp}\hlstd{=}\hlnum{1}\hlstd{,} \hlkwc{cex}\hlstd{=}\hlnum{2}\hlstd{)}
 \hlkwd{circle}\hlstd{(}\hlnum{5}\hlstd{,}\hlnum{5}\hlstd{,} \hlkwc{r}\hlstd{=}\hlnum{3}\hlstd{)}
-\hlkwd{circle}\hlstd{(}\hlnum{15}\hlstd{,}\hlnum{10}\hlstd{,} \hlkwc{r}\hlstd{=}\hlnum{4}\hlstd{,} \hlkwc{locnum}\hlstd{=}\hlnum{12}\hlstd{,} \hlkwc{col}\hlstd{=}\hlnum{2}\hlstd{,} \hlkwc{border}\hlstd{=}\hlnum{4}\hlstd{,} \hlkwc{lwd}\hlstd{=}\hlnum{3}\hlstd{)}
+\hlkwd{circle}\hlstd{(}\hlnum{15}\hlstd{,}\hlnum{10}\hlstd{,} \hlkwc{r}\hlstd{=}\hlnum{4}\hlstd{,} \hlkwc{locnum}\hlstd{=}\hlnum{12}\hlstd{,}
+       \hlkwc{col}\hlstd{=}\hlstr{"red"}\hlstd{,} \hlkwc{border}\hlstd{=}\hlstr{"blue"}\hlstd{,} \hlkwc{lwd}\hlstd{=}\hlnum{3}\hlstd{)}
 \end{alltt}
 \end{kframe}
 

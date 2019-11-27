@@ -1,4 +1,4 @@
-Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-27 11:05:04
+Running knitr::knit on 'LoopFun.Rnw', starting 2019-11-27 14:16:22
 
 
 processing file: LoopFun.Rnw
@@ -195,6 +195,11 @@ List of 2
  $ size: chr "scriptsize"
  $ eval: logi FALSE
 
+Error in parse(text = code, keep.source = FALSE) : 
+  <text>:11:0: unexpected end of input
+9:   
+10:  #
+   ^
   |                                                                         |...................................................              |  78%
   ordinary text without R code
 
@@ -222,6 +227,14 @@ List of 2
  $ size: chr "scriptsize"
  $ eval: logi FALSE
 
+Error in parse(text = code, keep.source = FALSE) : 
+  <text>:5:2: unexpected '}'
+4:  polygon(cx, cy, ...) # actually draw it
+5:  }
+    ^
+In addition: Warning message:
+In highr::hilight(x, format, prompt = options$prompt, markup = opts$markup) :
+  the syntax of the source code is invalid; the fallback mode is used
   |                                                                         |.........................................................        |  88%
 label: circlesdef (with options) 
 List of 1
@@ -232,8 +245,9 @@ List of 1
 
   |                                                                         |............................................................     |  92%
 label: exfunsolb (with options) 
-List of 1
- $ echo: language -1
+List of 2
+ $ echo      : language -1
+ $ fig.height: num 2.8
 
   |                                                                         |.............................................................    |  93%
   ordinary text without R code
@@ -262,12 +276,12 @@ List of 3
 output file: LoopFun.tex
 
 -------
-Finished knitr::knit 2019-11-27 11:05:04, after 0.51 secs
-Finished tools::texi2pdf 2019-11-27 11:05:37, after 33 secs 
+Finished knitr::knit 2019-11-27 14:16:39, after 17 secs
+Finished tools::texi2pdf 2019-11-27 14:17:22, after 44 secs 
 -------
 Messages in 'LoopFun.log' at 'C:/Dropbox/R/loopfun':
 ---
 No errors found in 'LoopFun.log', but to be sure,
 open the corresponding tex file in TexMaker and click on 'View log'.
 ---
-Total time  34 secs
+Total time  1 mins
