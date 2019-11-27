@@ -156,7 +156,7 @@ for(i in 1:50)
 \vspace{1em}
 Berry Boessenkool, \texttt{berry-b@gmx.de}\\
 Jannes Breier, \texttt{jbreier@gfz-potsdam.de}\\[1em]
-\href{https://gitext.gfz-potsdam.de/swc-bb/swc-lessons/2019-11-26-potsdam-berlin/R/tree/master/_episodes_rmd/data}{SWC lesson material}\\[1em]
+\href{https://gitext.gfz-potsdam.de/swc-bb/swc-lessons/2019-11-26-potsdam-berlin/R/tree/master/_episodes_rmd/data}{https://bit.ly/37AYX1D}\\[1em]
 These slides and tasks are a subset of Berry's teaching material at\\
 \href{https://github.com/brry/course}{github.com/brry/course}\\[1em]
 These slides are licenced under
